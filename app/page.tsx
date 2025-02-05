@@ -10,7 +10,7 @@ export default function LandingPage() {
         <div className="flex flex-col min-h-screen">
             <header className="px-4 lg:px-6 h-14 flex items-center">
                 <Link className="flex items-center justify-center" href="#">
-                    <MountainIcon className="h-6 w-6"/>
+                    <MountainIcon/>
                     <span className="sr-only">TCGMarket</span>
                 </Link>
             </header>
@@ -24,7 +24,8 @@ export default function LandingPage() {
                                         TCGMarket: Your South African Trading Card Marketplace
                                     </h1>
                                     <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                                        Catch 'em all in one place! Join the ultimate platform for trading Trading cards
+                                        Catch &apos;em all in one place! Join the ultimate platform for trading Trading
+                                        cards
                                         in South Africa.
                                     </p>
                                 </div>
@@ -66,7 +67,7 @@ export default function LandingPage() {
                         <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
                             <Card>
                                 <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <SearchIcon className="h-12 w-12 text-primary"/>
+                                    <SearchIcon/>
                                     <h3 className="text-xl font-bold">Vast collection</h3>
                                     <p className="text-center text-muted-foreground">
                                         Explore a wide range of Pokémon cards from classic to modern sets.
@@ -75,7 +76,7 @@ export default function LandingPage() {
                             </Card>
                             <Card>
                                 <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <ShieldIcon className="h-12 w-12 text-primary"/>
+                                    <ShieldIcon/>
                                     <h3 className="text-xl font-bold">Sell your cards</h3>
                                     <p className="text-center text-muted-foreground">
                                         Options to sell or trade your cards with other collectors.
@@ -84,7 +85,7 @@ export default function LandingPage() {
                             </Card>
                             <Card>
                                 <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <UsersIcon className="h-12 w-12 text-primary"/>
+                                    <UsersIcon/>
                                     <h3 className="text-xl font-bold">Community</h3>
                                     <p className="text-center text-muted-foreground">
                                         Connect with fellow Pokémon enthusiasts across South Africa.
