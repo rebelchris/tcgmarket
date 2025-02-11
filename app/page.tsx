@@ -2,7 +2,8 @@ import "@radix-ui/themes/styles.css";
 import Image from "next/image"
 import Link from "next/link"
 import {HeartHandshake, ShieldCheck, UserCheck} from "lucide-react";
-import {Box, Button, Card, Container, Flex, Grid, Heading, Section, Text} from "@radix-ui/themes";
+import {Box, Button, Card, Container, Flex, Grid, Heading, Section, Text, TextField,} from "@radix-ui/themes";
+import React from "react";
 
 export default function LandingPage() {
     return (
@@ -119,14 +120,15 @@ export default function LandingPage() {
                                 exclusive updates
                                 and offers.
                             </Text>
-                            <Flex direction="column" align="center" gap="2"
+                            <Flex direction="column" align="center" gap="3"
                                   style={{width: "100%", maxWidth: "400px"}}>
                                 <form style={{width: "100%"}}>
                                     <Flex gap="2">
-                                        <input className="max-w-lg flex-1" placeholder="Enter your email"
-                                               type="email"/>
-
-                                        <Button type="submit">Subscribe</Button>
+                                        <TextField.Root size="3" placeholder="Search the docs…" type="email"
+                                                        style={{flexGrow: 1}}>
+                                            <TextField.Slot/>
+                                        </TextField.Root>
+                                        <Button size='3' type="submit">Subscribe</Button>
                                     </Flex>
                                 </form>
                                 <Text size="1" color="gray">
