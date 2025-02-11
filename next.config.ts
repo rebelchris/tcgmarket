@@ -19,6 +19,13 @@ const nextConfig: NextConfig = {
                 pathname: '/**',
                 search: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'cdn.tcgmarket.co.za',
+                port: '',
+                pathname: '/**',
+                search: '',
+            }
         ],
     },
 };

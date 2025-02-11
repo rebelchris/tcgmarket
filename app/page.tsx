@@ -1,16 +1,16 @@
+import "@radix-ui/themes/styles.css";
 import Image from "next/image"
 import Link from "next/link"
-import {Button} from "@/components/ui/button"
 import {Input} from "@/components/ui/input"
-import {Card, CardContent} from "@/components/ui/card"
-import {MountainIcon, SearchIcon, ShieldIcon, UsersIcon} from "@/app/components/icons"
+import {HeartHandshake, ShieldCheck, UserCheck} from "lucide-react";
+import {Button, Card, Container, Flex, Grid, Heading, Section, Text} from "@radix-ui/themes";
 
 export default function LandingPage() {
     return (
         <div className="flex flex-col min-h-screen">
             <header className="px-4 lg:px-6 h-14 flex items-center">
                 <Link className="flex items-center justify-center" href="#">
-                    <MountainIcon/>
+                    TCGMARKET logo
                     <span className="sr-only">TCGMarket</span>
                 </Link>
             </header>
@@ -21,20 +21,19 @@ export default function LandingPage() {
                             <div className="flex flex-col justify-center space-y-4">
                                 <div className="space-y-2">
                                     <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                                        TCGMarket: Your South African Trading Card Marketplace
+                                        Trade Cards the Lekker Way
                                     </h1>
                                     <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                                        Catch &apos;em all in one place! Join the ultimate platform for trading Trading
-                                        cards
-                                        in South Africa.
+                                        Catch &apos;em all in one place! Join the ultimate platform for trading cards in
+                                        South Africa.
                                     </p>
                                 </div>
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                                     <Link href='#learn'>
-                                        <Button size="lg">Learn more</Button>
+                                        <Button size="4">Learn more</Button>
                                     </Link>
                                     <Link href='#contact'>
-                                        <Button size="lg" variant="outline">
+                                        <Button size="4" variant="outline">
                                             Sign up
                                         </Button>
                                     </Link>
@@ -45,11 +44,11 @@ export default function LandingPage() {
                                     <div
                                         className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
                                     <div className="absolute inset-2 bg-white rounded-full"></div>
-                                    <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="absolute inset-0 flex items-center justify-center p-2">
                                         <Image
-                                            src="/placeholder.svg?height=300&width=300"
-                                            width={200}
-                                            height={200}
+                                            src="https://cdn.tcgmarket.co.za/header.jpg"
+                                            width={400}
+                                            height={400}
                                             alt="Pokémon Cards"
                                             className="rounded-full"
                                         />
@@ -59,42 +58,38 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex justify-center"
-                         id="learn">
-                    <div className="container px-4 md:px-6">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">What to
-                            expect</h2>
-                        <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
+                <Section id="learn" style={{backgroundColor: "var(--purple-a9)"}}>
+                    <Container size="4" px="6">
+                        <Heading as="2" size="8" align="center" mb="6" style={{color: "var(--gray-1)"}}
+                        >What to expect</Heading>
+                        <Grid columns={{
+                            initial: "1",
+                            sm: "3",
+                        }} gap="3">
                             <Card>
-                                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <SearchIcon/>
-                                    <h3 className="text-xl font-bold">Vast collection</h3>
-                                    <p className="text-center text-muted-foreground">
-                                        Explore a wide range of Pokémon cards from classic to modern sets.
-                                    </p>
-                                </CardContent>
+                                <Flex direction="column" align="center" gap="3" p="6">
+                                    <UserCheck size={48}/>
+                                    <Heading>Connect</Heading>
+                                    <Text align="center">Connect with SA's Card Community</Text>
+                                </Flex>
                             </Card>
                             <Card>
-                                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <ShieldIcon/>
-                                    <h3 className="text-xl font-bold">Sell your cards</h3>
-                                    <p className="text-center text-muted-foreground">
-                                        Options to sell or trade your cards with other collectors.
-                                    </p>
-                                </CardContent>
+                                <Flex direction="column" align="center" gap="3" p="6">
+                                    <HeartHandshake size={48}/>
+                                    <Heading>Trade</Heading>
+                                    <Text align="center">Trade, Collect, and Level Up Your Collection</Text>
+                                </Flex>
                             </Card>
                             <Card>
-                                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                                    <UsersIcon/>
-                                    <h3 className="text-xl font-bold">Community</h3>
-                                    <p className="text-center text-muted-foreground">
-                                        Connect with fellow Pokémon enthusiasts across South Africa.
-                                    </p>
-                                </CardContent>
+                                <Flex direction="column" align="center" gap="3" p="6">
+                                    <ShieldCheck size={48}/>
+                                    <Heading>Secure</Heading>
+                                    <Text align="center">Safe & Secure Trading, Mzansi Style</Text>
+                                </Flex>
                             </Card>
-                        </div>
-                    </div>
-                </section>
+                        </Grid>
+                    </Container>
+                </Section>
                 <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center space-y-4 text-center">
@@ -102,8 +97,7 @@ export default function LandingPage() {
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Stay updated</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     Be the first to know when TCGMarket launches. Sign up for our newsletter to receive
-                                    exclusive updates
-                                    and offers.
+                                    exclusive updates.
                                 </p>
                             </div>
                             <div className="w-full max-w-sm space-y-2">
