@@ -60,7 +60,7 @@ export default function LandingPage() {
                 </section>
                 <Section id="learn" style={{backgroundColor: "var(--purple-a9)"}}>
                     <Container size="4" px="6">
-                        <Heading as="2" size="8" align="center" mb="6" style={{color: "var(--gray-1)"}}
+                        <Heading as="h2" size="8" align="center" mb="6" style={{color: "var(--gray-1)"}}
                         >What to expect</Heading>
                         <Grid columns={{
                             initial: "1",
@@ -70,7 +70,7 @@ export default function LandingPage() {
                                 <Flex direction="column" align="center" gap="3" p="6">
                                     <UserCheck size={48}/>
                                     <Heading>Connect</Heading>
-                                    <Text align="center">Connect with SA's Card Community</Text>
+                                    <Text align="center">Connect with SA&apos;s Card Community</Text>
                                 </Flex>
                             </Card>
                             <Card>
