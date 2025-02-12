@@ -11,7 +11,10 @@ export default function LandingPage() {
             <Box asChild>
                 <header>
                     <Container size="4">
-                        <Flex justify="between" align="center" py="4">
+                        <Flex justify="between" align="center" py="4" px={{
+                            initial: '4',
+                            lg: '0'
+                        }}>
                             <Link className="flex items-center justify-center" href="#">
                                 <Image src='https://cdn.tcgmarket.co.za/TCGMARKET.png' alt='TCGmarket' width={112}
                                        height={78}/>
@@ -22,14 +25,37 @@ export default function LandingPage() {
                 </header>
             </Box>
             <Box>
-                <Section size="3">
-                    <Container size="4">
-                        <Flex direction="row" align="center" justify="center" gap="8">
-                            <Flex direction="column" justify="center" gap="4" style={{maxWidth: "600px"}}>
-                                <Heading size="9">
+                <Section py={{
+                    initial: '4',
+                    sm: '5',
+                    md: '6',
+                    lg: '9',
+                }}>
+                    <Container py={{
+                        initial: '4',
+                        sm: '5',
+                        md: '6',
+                        lg: '9',
+                    }} px='8'>
+                        <Grid columns={{
+                            initial: '1',
+                            md: '1fr 400px',
+                            xl: '1fr 600px'
+                        }} gap='6'>
+                            <Flex direction="column" align={{
+                                initial: 'center',
+                                md: 'start'
+                            }} justify="center" gap="4" flexBasis="1">
+                                <Heading size="9" align={{
+                                    initial: 'center',
+                                    md: 'left'
+                                }}>
                                     Trade Cards the Lekker Way
                                 </Heading>
-                                <Text size="5" color="gray">
+                                <Text size="5" color="gray" align={{
+                                    initial: 'center',
+                                    md: 'left'
+                                }}>
                                     Catch &apos;em all in one place! Join the ultimate platform for trading
                                     cards in
                                     South Africa.
@@ -45,36 +71,39 @@ export default function LandingPage() {
                                     </Link>
                                 </Flex>
                             </Flex>
-                            <Box style={{position: "relative", width: "400px", height: "400px"}}>
+                            <Flex justify="center" align="center" style={{minWidth: '400px'}}>
                                 <Box
-                                    style={{
-                                        position: "absolute",
-                                        inset: 0,
-                                        background: "linear-gradient(to right, var(--blue-9), var(--purple-9))",
-                                        borderRadius: "50%",
-                                        animation: "pulse 2s infinite",
-                                    }}
-                                />
-                                <Box
-                                    style={{
-                                        position: "absolute",
-                                        inset: "8px",
-                                        background: "var(--color-background)",
-                                        borderRadius: "50%",
-                                    }}
-                                />
-                                <Flex align="center" p="2" justify="center"
-                                      style={{position: "absolute", inset: 0}}>
-                                    <Image
-                                        src="https://cdn.tcgmarket.co.za/header.jpg"
-                                        width={400}
-                                        height={400}
-                                        alt="Pokémon Cards"
-                                        className="rounded-full"
+                                    style={{position: "relative", width: "400px", height: "400px"}}>
+                                    <Box
+                                        style={{
+                                            position: "absolute",
+                                            inset: 0,
+                                            background: "linear-gradient(to right, var(--blue-9), var(--purple-9))",
+                                            borderRadius: "50%",
+                                            animation: "pulse 2s infinite",
+                                        }}
                                     />
-                                </Flex>
-                            </Box>
-                        </Flex>
+                                    <Box
+                                        style={{
+                                            position: "absolute",
+                                            inset: "8px",
+                                            background: "var(--color-background)",
+                                            borderRadius: "50%",
+                                        }}
+                                    />
+                                    <Flex align="center" p="2" justify="center"
+                                          style={{position: "absolute", inset: 0}}>
+                                        <Image
+                                            src="https://cdn.tcgmarket.co.za/header.jpg"
+                                            width={400}
+                                            height={400}
+                                            alt="Pokémon Cards"
+                                            className="rounded-full"
+                                        />
+                                    </Flex>
+                                </Box>
+                            </Flex>
+                        </Grid>
                     </Container>
                 </Section>
                 <Section id="learn" style={{backgroundColor: "var(--purple-a9)"}}>
@@ -109,9 +138,12 @@ export default function LandingPage() {
                         </Grid>
                     </Container>
                 </Section>
-                <Section size="3" id="contact">
+                <Section size="4" id="contact">
                     <Container size="4">
-                        <Flex direction="column" align="center" gap="6">
+                        <Flex direction="column" align="center" gap="6" px={{
+                            initial: '4',
+                            lg: '0'
+                        }}>
                             <Heading size="8" align="center">
                                 Stay Updated
                             </Heading>
@@ -142,7 +174,10 @@ export default function LandingPage() {
             <Box asChild>
                 <footer>
                     <Container size="4">
-                        <Flex justify="between" align="center" py="4">
+                        <Flex justify="between" align="center" py="4" px={{
+                            initial: '4',
+                            lg: '0'
+                        }}>
                             <Text size="1" color="gray">
                                 © 2025 TCGMarket. All rights reserved.
                             </Text>
