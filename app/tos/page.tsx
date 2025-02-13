@@ -1,6 +1,6 @@
 import {Box, Container} from "@radix-ui/themes";
 
-export const TOSPage = () => {
+export default function TOSPage() {
     return (
         <Container size="1">
             <Box px={{
@@ -9,8 +9,9 @@ export const TOSPage = () => {
             }}>
                 <h1>TCGMarket Terms of Service</h1>
 
-                <p>Welcome to TCGMarket! By accessing or using our platform (the "Service"), you agree to be bound by
-                    these Terms of Service ("Terms"). Please read them carefully.</p>
+                <p>Welcome to TCGMarket! By accessing or using our platform (the &quot;Service&quot;), you agree to be
+                    bound by
+                    these Terms of Service (&quot;Terms&quot;). Please read them carefully.</p>
 
                 <h2>1. Acceptance of Terms</h2>
                 <p>By using the Service, you represent that you are at least 18 years old and have the legal capacity to
@@ -76,4 +77,3 @@ export const TOSPage = () => {
         </Container>
     )
 }
-export default TOSPage;
