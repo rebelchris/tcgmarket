@@ -143,7 +143,7 @@ export default function LandingPage() {
                 <Section size="4" id="contact">
                     <Container size="4">
                         <Flex direction="column" align="center" gap="6" px={{
-                            initial: '4',
+                            initial: '6',
                             lg: '0'
                         }}>
                             <Heading size="8" align="center">
@@ -169,7 +169,7 @@ export default function LandingPage() {
                 <footer>
                     <Container size="4">
                         <Flex justify="between" align="center" py="4" px={{
-                            initial: '4',
+                            initial: '6',
                             lg: '0'
                         }}>
                             <Text size="1" color="gray">
