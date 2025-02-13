@@ -1,4 +1,4 @@
-export async function POST(req) { // Use POST for POST requests
+export async function POST(req: Request) { // Use POST for POST requests
     const {email} = await req.json();
 
     if (!email) {

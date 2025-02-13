@@ -1,11 +1,11 @@
 "use client"
-import React, {useState} from "react";
+import React, {FormEvent, useState} from "react";
 import {Button, Flex, TextField} from "@radix-ui/themes";
 
 export const NewsletterSubscribe = () => {
     const [email, setEmail] = useState('');
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
         try {
@@ -17,9 +17,6 @@ export const NewsletterSubscribe = () => {
                 body: JSON.stringify({email: email.trim().toLowerCase()}),
             });
 
-            const data = await response.json();
-            console.log('data', data)
-
             if (response.ok) {
                 setEmail(''); // Clear the form
             } else {
@@ -27,6 +24,7 @@ export const NewsletterSubscribe = () => {
             }
         } catch (err) {
             // TODO: Something wrong
+            console.error(err);
         }
     };
 
