@@ -2,8 +2,9 @@ import "@radix-ui/themes/styles.css";
 import Image from "next/image"
 import Link from "next/link"
 import {HeartHandshake, ShieldCheck, UserCheck} from "lucide-react";
-import {Box, Button, Card, Container, Flex, Grid, Heading, Section, Text, TextField,} from "@radix-ui/themes";
+import {AspectRatio, Box, Button, Card, Container, Flex, Grid, Heading, Section, Text,} from "@radix-ui/themes";
 import React from "react";
+import {NewsletterSubscribe} from "@/app/components/NewsletterSubscribe";
 
 export default function LandingPage() {
     return (
@@ -71,36 +72,37 @@ export default function LandingPage() {
                                     </Link>
                                 </Flex>
                             </Flex>
-                            <Flex justify="center" align="center" style={{minWidth: '400px'}}>
-                                <Box
-                                    style={{position: "relative", width: "400px", height: "400px"}}>
-                                    <Box
-                                        style={{
-                                            position: "absolute",
-                                            inset: 0,
-                                            background: "linear-gradient(to right, var(--blue-9), var(--purple-9))",
-                                            borderRadius: "50%",
-                                            animation: "pulse 2s infinite",
-                                        }}
-                                    />
-                                    <Box
-                                        style={{
-                                            position: "absolute",
-                                            inset: "8px",
-                                            background: "var(--color-background)",
-                                            borderRadius: "50%",
-                                        }}
-                                    />
-                                    <Flex align="center" p="2" justify="center"
-                                          style={{position: "absolute", inset: 0}}>
-                                        <Image
-                                            src="https://cdn.tcgmarket.co.za/header.jpg"
-                                            width={400}
-                                            height={400}
-                                            alt="Pokémon Cards"
-                                            className="rounded-full"
+                            <Flex justify="center" align="center">
+                                <Box maxWidth="400px" maxHeight="400px" width="100%">
+                                    <AspectRatio>
+                                        <Box
+                                            style={{
+                                                position: "absolute",
+                                                inset: 0,
+                                                background: "linear-gradient(to right, var(--blue-9), var(--purple-9))",
+                                                borderRadius: "50%",
+                                                animation: "pulse 2s infinite",
+                                            }}
                                         />
-                                    </Flex>
+                                        <Box
+                                            style={{
+                                                position: "absolute",
+                                                inset: "8px",
+                                                background: "var(--color-background)",
+                                                borderRadius: "50%",
+                                            }}
+                                        />
+                                        <Flex align="center" p="2" justify="center"
+                                              style={{position: "absolute", inset: 0}}>
+                                            <Image
+                                                src="https://cdn.tcgmarket.co.za/header.jpg"
+                                                width={400}
+                                                height={400}
+                                                alt="Pokémon Cards"
+                                                className="rounded-full"
+                                            />
+                                        </Flex>
+                                    </AspectRatio>
                                 </Box>
                             </Flex>
                         </Grid>
@@ -154,15 +156,7 @@ export default function LandingPage() {
                             </Text>
                             <Flex direction="column" align="center" gap="3"
                                   style={{width: "100%", maxWidth: "400px"}}>
-                                <form style={{width: "100%"}}>
-                                    <Flex gap="2">
-                                        <TextField.Root size="3" placeholder="Search the docs…" type="email"
-                                                        style={{flexGrow: 1}}>
-                                            <TextField.Slot/>
-                                        </TextField.Root>
-                                        <Button size='3' type="submit">Subscribe</Button>
-                                    </Flex>
-                                </form>
+                                <NewsletterSubscribe/>
                                 <Text size="1" color="gray">
                                     By subscribing, you agree to our Terms of Service and Privacy Policy.
                                 </Text>
