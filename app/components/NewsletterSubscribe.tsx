@@ -32,7 +32,7 @@ export const NewsletterSubscribe = () => {
         <>
             <form style={{width: "100%"}} onSubmit={handleSubmit}>
                 <Flex gap="2">
-                    <TextField.Root onChange={(e) => setEmail(e.target.value)} size="3" placeholder="Search the docs…"
+                    <TextField.Root onChange={(e) => setEmail(e.target.value)} size="3" placeholder="Email address…"
                                     type="email"
                                     style={{flexGrow: 1}}>
                         <TextField.Slot/>
