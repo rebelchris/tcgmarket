@@ -2,11 +2,11 @@ import {Box, Container} from "@radix-ui/themes";
 
 export default function TOSPage() {
     return (
-        <Container size="1">
+        <Container size="2">
             <Box px={{
                 initial: '6',
                 lg: '0'
-            }}>
+            }} className='prose'>
                 <h1>TCGMarket Terms of Service</h1>
 
                 <p>Welcome to TCGMarket! By accessing or using our platform (the &quot;Service&quot;), you agree to be
