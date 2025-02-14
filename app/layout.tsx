@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "TCGMarket",
+    title: "TCGmarket",
     description: "Your South African Trading Card Marketplace",
 };
 
@@ -44,7 +44,7 @@ export default function RootLayout({
                                 <Link href="/">
                                     <Image src='https://cdn.tcgmarket.co.za/TCGMARKET.png' alt='TCGmarket' width={112}
                                            height={78}/>
-                                    <span className="sr-only">TCGMarket</span>
+                                    <span className="sr-only">TCGmarket</span>
                                 </Link>
                             </Flex>
                         </Container>
@@ -59,7 +59,7 @@ export default function RootLayout({
                                 lg: '0'
                             }}>
                                 <Text size="1" color="gray">
-                                    © 2025 TCGMarket. All rights reserved.
+                                    © 2025 TCGmarket. All rights reserved.
                                 </Text>
                                 <Flex gap="4">
                                     <Link href="/tos">

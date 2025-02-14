@@ -7,9 +7,9 @@ export default function TOSPage() {
                 initial: '6',
                 lg: '0'
             }} className='prose'>
-                <h1>TCGMarket Terms of Service</h1>
+                <h1>TCGmarket Terms of Service</h1>
 
-                <p>Welcome to TCGMarket! By accessing or using our platform (the &quot;Service&quot;), you agree to be
+                <p>Welcome to TCGmarket! By accessing or using our platform (the &quot;Service&quot;), you agree to be
                     bound by
                     these Terms of Service (&quot;Terms&quot;). Please read them carefully.</p>
 
@@ -19,7 +19,7 @@ export default function TOSPage() {
                     entity, you represent that you have the authority to bind such entity to these Terms.</p>
 
                 <h2>2. Description of Service</h2>
-                <p>TCGMarket is an online platform that allows users to buy, sell, and trade trading cards. Users can
+                <p>TCGmarket is an online platform that allows users to buy, sell, and trade trading cards. Users can
                     create profiles, list cards for sale, browse listings, connect with other users, and communicate
                     regarding trades. </p>
 
@@ -48,7 +48,7 @@ export default function TOSPage() {
 
                 <h2>6. Intellectual Property</h2>
                 <p>All content on the Service, including but not limited to text, graphics, logos, and software, is the
-                    property of TCGMarket or its licensors and is protected by copyright and other intellectual property
+                    property of TCGmarket or its licensors and is protected by copyright and other intellectual property
                     laws.</p>
 
                 <h2>7. Limitation of Liability</h2>

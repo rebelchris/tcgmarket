@@ -132,7 +132,7 @@ export default function LandingPage() {
                             Stay Updated
                         </Heading>
                         <Text size="5" align="center" style={{maxWidth: "600px"}}>
-                            Be the first to know when TCGMarket launches!
+                            Be the first to know when TCGmarket launches!
                         </Text>
                         <Flex direction="column" align="center" gap="3"
                               style={{width: "100%", maxWidth: "400px"}}>
