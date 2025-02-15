@@ -1,13 +1,14 @@
 "use client"
 import React, {FormEvent, useState} from "react";
-import {Button, Flex, TextField} from "@radix-ui/themes";
+import {Button, Flex, Text, TextField} from "@radix-ui/themes";
 
 export const NewsletterSubscribe = () => {
     const [email, setEmail] = useState('');
+    const [isError, setIsError] = useState(false);
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-
+        setIsError(false);
         try {
             const response = await fetch('/api/subscribe', { // Call your Vercel function
                 method: 'POST',
@@ -20,11 +21,10 @@ export const NewsletterSubscribe = () => {
             if (response.ok) {
                 setEmail(''); // Clear the form
             } else {
-                // TODO: Something wrong
+                setIsError(true);
             }
         } catch (err) {
-            // TODO: Something wrong
-            console.error(err);
+            setIsError(true);
         }
     };
 
@@ -34,11 +34,13 @@ export const NewsletterSubscribe = () => {
                 <Flex gap="2">
                     <TextField.Root onChange={(e) => setEmail(e.target.value)} size="3" placeholder="Email address…"
                                     type="email"
+                                    color={isError ? 'red' : 'gray'} required
                                     style={{flexGrow: 1}}>
                         <TextField.Slot/>
                     </TextField.Root>
                     <Button size='3' type="submit">Subscribe</Button>
                 </Flex>
+                {isError && <Text color="red">Something went wrong. Please try again.</Text>}
             </form>
         </>
     );
