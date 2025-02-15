@@ -10,7 +10,8 @@ export default function TOSPage() {
                 <h1>TCGmarket Terms of Service</h1>
 
                 <p>Welcome to TCGmarket (https://tcgmarket.co.za/). By accessing or using our platform, you agree to be
-                    bound by these Terms of Service ("Terms"). Please read them carefully. As an individual operating
+                    bound by these Terms of Service (&quot;Terms&quot;). Please read them carefully. As an individual
+                    operating
                     TCGmarket, I, Chris Bongers, am providing this service to connect trading card enthusiasts within
                     South Africa.</p>
 
@@ -22,7 +23,8 @@ export default function TOSPage() {
                 <h2>2. Description of Service</h2>
                 <p>TCGmarket is an online platform that facilitates connections between individuals interested in
                     trading cards within South Africa. Users can create accounts, upload listings of their cards, browse
-                    other users' listings, and leave reviews for other users. TCGmarket does not facilitate direct sales
+                    other users&apos; listings, and leave reviews for other users. TCGmarket does not facilitate direct
+                    sales
                     or transactions between users. All trades, sales, or exchanges are conducted directly between
                     users.</p>
 
@@ -57,7 +59,8 @@ export default function TOSPage() {
                     and respectful. TCGmarket is not responsible for the content of user reviews.</p>
 
                 <h2>7. Disclaimer of Warranties</h2>
-                <p>TCGmarket is provided "as is" and "as available." I make no warranties, express or implied, regarding
+                <p>TCGmarket is provided &quot;as is&quot; and &quot;as available.&quot; I make no warranties, express
+                    or implied, regarding
                     the operation of TCGmarket or the content available on it. I do not warrant that TCGmarket will be
                     error-free or uninterrupted.</p>
 

@@ -24,6 +24,7 @@ export const NewsletterSubscribe = () => {
                 setIsError(true);
             }
         } catch (err) {
+            console.error(err);
             setIsError(true);
         }
     };
