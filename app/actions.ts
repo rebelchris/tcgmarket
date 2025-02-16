@@ -3,9 +3,6 @@
 import {db} from '../db/drizzle';
 import {cards, listings, sets, tcgs, users} from '../db/schema';
 import {eq, sql} from 'drizzle-orm';
-import {revalidatePath} from 'next/cache';
-import {getServerSession} from 'next-auth';
-import {authOptions} from "auth";
 
 export const getListings = async () => {
     return await db
@@ -45,19 +42,29 @@ export const getCards = async () => {
         .innerJoin(sets, eq(cards.setId, sets.id));
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const addListing = async (newListing: any) => {
-    const session = await getServerSession(authOptions);
-    await db.insert(listings).values({
-        userId: session?.user?.id,
-        listId: 1,
-        cardId: 1,
-        ...newListing,
-    });
-    revalidatePath('/');
-};
+// export const addListing = async (newListing: any) => {
+//     const session = await getServerSession(authOptions);
+//     await db.insert(listings).values({
+//         userId: session?.user?.id,
+//         listId: 1,
+//         cardId: 1,
+//         ...newListing,
+//     });
+//     revalidatePath('/');
+// };
 
-export const searchCard = async (query: string) => {
+export type SearchCard = {
+    id: string;
+    name: string,
+    setName: string,
+    setCode: string | null,
+    setSlug: string | null,
+    setSymbol: string | null,
+    number: string | null,
+    slug: string | null,
+}
+
+export const searchCard = async (query: string): Promise<SearchCard[]> => {
     const endQuery = `${query}:*`;
     const data = await db
         .select({
@@ -75,6 +82,5 @@ export const searchCard = async (query: string) => {
             sql`to_tsvector('english', ${cards.name}) @@ to_tsquery('english', ${endQuery})`
         )
         .innerJoin(sets, eq(cards.setId, sets.id));
-    console.log(data);
     return data;
 };

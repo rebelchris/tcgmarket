@@ -13,6 +13,7 @@ const main = async () => {
 
     await db.insert(sets).values(setSeed);
 
+    // @ts-ignore
     await db.insert(cards).values(cardSeed);
 
     console.log("Seed done");

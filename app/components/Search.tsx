@@ -1,17 +1,18 @@
 'use client';
 import {useState} from 'react';
 import Link from 'next/link'
-import {searchCard} from "@/app/actions";
+import {SearchCard, searchCard} from "@/app/actions";
 import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList} from "cmdk";
+
 
 export const Search = () => {
     const [query, setQuery] = useState('');
-    const [result, setResult] = useState([]);
+    const [result, setResult] = useState<SearchCard[]>([]);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleInputChange = async (value: any) => {
         setQuery(value);
-        const data: [] = await searchCard(value);
+        const data: SearchCard[] = await searchCard(value);
         setResult(data);
     };
 

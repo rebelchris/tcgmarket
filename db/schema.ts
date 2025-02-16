@@ -13,7 +13,7 @@ import {
     varchar,
 } from 'drizzle-orm/pg-core';
 import {AdapterAccountType} from '@auth/core/adapters';
-import {sql} from 'drizzle-orm/sql';
+import {SQL, sql} from 'drizzle-orm/sql';
 
 export const conditionEnum = pgEnum('condition', [
     'mint',
@@ -112,7 +112,7 @@ export const tcgs = pgTable('tcgs', {
     name: varchar('name', {length: 50}).unique().notNull(), // "Pokémon", "Magic: The Gathering"
     createdAt: timestamp('created_at').defaultNow(),
     slug: text('slug').generatedAlwaysAs(
-        () => sql`slugify(${tcgs.name})`,
+        (): SQL => sql`slugify(${tcgs.name})`,
     )
 });
 
@@ -129,7 +129,7 @@ export const sets = pgTable('sets', {
     symbolUrl: text('symbol_url'),
     createdAt: timestamp('created_at').defaultNow(),
     slug: text('slug').generatedAlwaysAs(
-        () => sql`slugify(${sets.name})`,
+        (): SQL => sql`slugify(${sets.name})`,
     )
 });
 
@@ -141,19 +141,20 @@ export const cards = pgTable(
             .$defaultFn(() => crypto.randomUUID()),
         tcgId: integer('tcg_id').references(() => tcgs.id),
         setId: varchar('set_id').references(() => sets.id),
+        // @ts-ignore
         name: varchar('name', {length: 255}).notNull(),
         searchName: varchar('search_name', {length: 255}).notNull(),
         tcgApiId: text('tcg_api_id'),
         number: varchar('number', {length: 20}),
         rarity: varchar('rarity', {length: 20}),
         metadata: jsonb('metadata').notNull().default({}),
-        images: jsonb('images').notNull().default({}),
+        images: jsonb('images').notNull().$type<{ large?: string, small?: string }>(),
         createdAt: timestamp('created_at').defaultNow(),
         slug: text('slug').generatedAlwaysAs(
-            () => sql`slugify(${cards.searchName})`,
+            (): SQL => sql`slugify(${cards.searchName})`,
         )
     },
-    (table) => ({
+    (table: SQL) => ({
         nameSearchIndex: index('name_search_index').using(
             'gin',
             sql`to_tsvector('english', ${cards.name})`

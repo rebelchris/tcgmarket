@@ -31,7 +31,9 @@ export default async function Page({
     return (
         <div>
             <p>Hello card {data.searchName}</p>
-            <Image src={data.images.large} alt={data.name} width={300} height={600}/>
+            {data.images?.large && (
+                <Image src={data.images.large} alt={data.name} width={300} height={600}/>
+            )}
         </div>
     )
 }
