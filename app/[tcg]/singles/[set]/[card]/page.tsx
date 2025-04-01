@@ -1,7 +1,6 @@
 import {getCards} from "@/app/actions";
 
-export const dynamicParams = false
-
+export const dynamic = 'force-static'
 
 export async function generateStaticParams() {
     const tcgs = await getCards();

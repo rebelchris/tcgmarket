@@ -4,7 +4,6 @@ import {
     integer,
     jsonb,
     numeric,
-    pgEnum,
     pgTable,
     primaryKey,
     text,
@@ -14,15 +13,6 @@ import {
 import {AdapterAccountType} from '@auth/core/adapters';
 import {SQL, sql} from 'drizzle-orm/sql';
 import {relations} from "drizzle-orm";
-
-export const conditionEnum = pgEnum('condition', [
-    'mint',
-    'near_mint',
-    'lightly_played',
-    'played',
-    'heavily_played',
-    'poor',
-]);
 
 export const users = pgTable('user', {
     id: text('id')
@@ -188,7 +178,7 @@ export const listings = pgTable('listings', {
     listId: text('list_id')
         .references(() => userLists.id)
         .notNull(),
-    condition: conditionEnum('condition').default('near_mint'),
+    condition: text('condition').default('near_mint'),
     price: numeric('price', {precision: 12, scale: 2}).notNull(),
     quantity: integer('quantity').default(1),
     isReverse: boolean('is_reverse').default(false),
