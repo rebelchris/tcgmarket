@@ -7,13 +7,13 @@ import {
     pgEnum,
     pgTable,
     primaryKey,
-    serial,
     text,
     timestamp,
     varchar,
 } from 'drizzle-orm/pg-core';
 import {AdapterAccountType} from '@auth/core/adapters';
 import {SQL, sql} from 'drizzle-orm/sql';
+import {relations} from "drizzle-orm";
 
 export const conditionEnum = pgEnum('condition', [
     'mint',
@@ -108,9 +108,10 @@ export const authenticators = pgTable(
 );
 
 export const tcgs = pgTable('tcgs', {
-    id: serial('id').primaryKey(),
+    id: varchar('id', {length: 50}).primaryKey(),
     name: varchar('name', {length: 50}).unique().notNull(), // "Pokémon", "Magic: The Gathering"
     createdAt: timestamp('created_at').defaultNow(),
+    logoUrl: text('logo_url'),
     slug: text('slug').generatedAlwaysAs(
         (): SQL => sql`slugify(${tcgs.name})`,
     )
@@ -118,7 +119,7 @@ export const tcgs = pgTable('tcgs', {
 
 export const sets = pgTable('sets', {
     id: varchar('id', {length: 20}).primaryKey(), // "sv1", "ltr"
-    tcgId: integer('tcg_id').references(() => tcgs.id),
+    tcgId: varchar('tcg_id').references(() => tcgs.id),
     name: varchar('name', {length: 100}).notNull(), // "Scarlet & Violet: 151", "The Lord of the Rings: Tales of Middle-earth"
     series: varchar('series', {length: 50}).notNull(), // "Sword & Shield", "The Lord of the Rings"
     printedTotal: integer('printed_total'),
@@ -139,7 +140,7 @@ export const cards = pgTable(
         id: text('id')
             .primaryKey()
             .$defaultFn(() => crypto.randomUUID()),
-        tcgId: integer('tcg_id').references(() => tcgs.id),
+        tcgId: varchar('tcg_id').references(() => tcgs.id),
         setId: varchar('set_id').references(() => sets.id),
         // @ts-ignore
         name: varchar('name', {length: 255}).notNull(),
@@ -161,6 +162,7 @@ export const cards = pgTable(
         ),
     })
 );
+
 
 export const userLists = pgTable('user_lists', {
     id: text('id')
@@ -199,3 +201,7 @@ export const listings = pgTable('listings', {
     createdAt: timestamp('created_at').defaultNow(),
     updatedAt: timestamp('updated_at').defaultNow(),
 });
+
+export const cardsRelations = relations(cards, ({one}) => ({
+    set: one(sets, {fields: [cards.setId], references: [sets.id]}),
+}));

@@ -1,6 +1,6 @@
 export const cardSeedBase2 = [
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Clefable',
         tcgApiId: 'base2-1',
@@ -10,7 +10,7 @@ export const cardSeedBase2 = [
         searchName: 'Clefable (JU 1)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Electrode',
         tcgApiId: 'base2-2',
@@ -20,7 +20,7 @@ export const cardSeedBase2 = [
         searchName: 'Electrode (JU 2)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Flareon',
         tcgApiId: 'base2-3',
@@ -30,7 +30,7 @@ export const cardSeedBase2 = [
         searchName: 'Flareon (JU 3)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Jolteon',
         tcgApiId: 'base2-4',
@@ -40,7 +40,7 @@ export const cardSeedBase2 = [
         searchName: 'Jolteon (JU 4)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Kangaskhan',
         tcgApiId: 'base2-5',
@@ -50,7 +50,7 @@ export const cardSeedBase2 = [
         searchName: 'Kangaskhan (JU 5)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Mr. Mime',
         tcgApiId: 'base2-6',
@@ -60,7 +60,7 @@ export const cardSeedBase2 = [
         searchName: 'Mr. Mime (JU 6)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Nidoqueen',
         tcgApiId: 'base2-7',
@@ -70,7 +70,7 @@ export const cardSeedBase2 = [
         searchName: 'Nidoqueen (JU 7)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Pidgeot',
         tcgApiId: 'base2-8',
@@ -80,7 +80,7 @@ export const cardSeedBase2 = [
         searchName: 'Pidgeot (JU 8)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Pinsir',
         tcgApiId: 'base2-9',
@@ -90,7 +90,7 @@ export const cardSeedBase2 = [
         searchName: 'Pinsir (JU 9)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Scyther',
         tcgApiId: 'base2-10',
@@ -100,7 +100,7 @@ export const cardSeedBase2 = [
         searchName: 'Scyther (JU 10)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Snorlax',
         tcgApiId: 'base2-11',
@@ -110,7 +110,7 @@ export const cardSeedBase2 = [
         searchName: 'Snorlax (JU 11)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Vaporeon',
         tcgApiId: 'base2-12',
@@ -120,7 +120,7 @@ export const cardSeedBase2 = [
         searchName: 'Vaporeon (JU 12)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Venomoth',
         tcgApiId: 'base2-13',
@@ -130,7 +130,7 @@ export const cardSeedBase2 = [
         searchName: 'Venomoth (JU 13)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Victreebel',
         tcgApiId: 'base2-14',
@@ -140,7 +140,7 @@ export const cardSeedBase2 = [
         searchName: 'Victreebel (JU 14)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Vileplume',
         tcgApiId: 'base2-15',
@@ -150,7 +150,7 @@ export const cardSeedBase2 = [
         searchName: 'Vileplume (JU 15)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Wigglytuff',
         tcgApiId: 'base2-16',
@@ -160,7 +160,7 @@ export const cardSeedBase2 = [
         searchName: 'Wigglytuff (JU 16)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Clefable',
         tcgApiId: 'base2-17',
@@ -170,7 +170,7 @@ export const cardSeedBase2 = [
         searchName: 'Clefable (JU 17)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Electrode',
         tcgApiId: 'base2-18',
@@ -180,7 +180,7 @@ export const cardSeedBase2 = [
         searchName: 'Electrode (JU 18)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Flareon',
         tcgApiId: 'base2-19',
@@ -190,7 +190,7 @@ export const cardSeedBase2 = [
         searchName: 'Flareon (JU 19)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Jolteon',
         tcgApiId: 'base2-20',
@@ -200,7 +200,7 @@ export const cardSeedBase2 = [
         searchName: 'Jolteon (JU 20)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Kangaskhan',
         tcgApiId: 'base2-21',
@@ -210,7 +210,7 @@ export const cardSeedBase2 = [
         searchName: 'Kangaskhan (JU 21)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Mr. Mime',
         tcgApiId: 'base2-22',
@@ -220,7 +220,7 @@ export const cardSeedBase2 = [
         searchName: 'Mr. Mime (JU 22)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Nidoqueen',
         tcgApiId: 'base2-23',
@@ -230,7 +230,7 @@ export const cardSeedBase2 = [
         searchName: 'Nidoqueen (JU 23)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Pidgeot',
         tcgApiId: 'base2-24',
@@ -240,7 +240,7 @@ export const cardSeedBase2 = [
         searchName: 'Pidgeot (JU 24)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Pinsir',
         tcgApiId: 'base2-25',
@@ -250,7 +250,7 @@ export const cardSeedBase2 = [
         searchName: 'Pinsir (JU 25)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Scyther',
         tcgApiId: 'base2-26',
@@ -260,7 +260,7 @@ export const cardSeedBase2 = [
         searchName: 'Scyther (JU 26)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Snorlax',
         tcgApiId: 'base2-27',
@@ -270,7 +270,7 @@ export const cardSeedBase2 = [
         searchName: 'Snorlax (JU 27)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Vaporeon',
         tcgApiId: 'base2-28',
@@ -280,7 +280,7 @@ export const cardSeedBase2 = [
         searchName: 'Vaporeon (JU 28)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Venomoth',
         tcgApiId: 'base2-29',
@@ -290,7 +290,7 @@ export const cardSeedBase2 = [
         searchName: 'Venomoth (JU 29)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Victreebel',
         tcgApiId: 'base2-30',
@@ -300,7 +300,7 @@ export const cardSeedBase2 = [
         searchName: 'Victreebel (JU 30)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Vileplume',
         tcgApiId: 'base2-31',
@@ -310,7 +310,7 @@ export const cardSeedBase2 = [
         searchName: 'Vileplume (JU 31)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Wigglytuff',
         tcgApiId: 'base2-32',
@@ -320,7 +320,7 @@ export const cardSeedBase2 = [
         searchName: 'Wigglytuff (JU 32)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Butterfree',
         tcgApiId: 'base2-33',
@@ -330,7 +330,7 @@ export const cardSeedBase2 = [
         searchName: 'Butterfree (JU 33)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Dodrio',
         tcgApiId: 'base2-34',
@@ -340,7 +340,7 @@ export const cardSeedBase2 = [
         searchName: 'Dodrio (JU 34)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Exeggutor',
         tcgApiId: 'base2-35',
@@ -350,7 +350,7 @@ export const cardSeedBase2 = [
         searchName: 'Exeggutor (JU 35)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Fearow',
         tcgApiId: 'base2-36',
@@ -360,7 +360,7 @@ export const cardSeedBase2 = [
         searchName: 'Fearow (JU 36)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Gloom',
         tcgApiId: 'base2-37',
@@ -370,7 +370,7 @@ export const cardSeedBase2 = [
         searchName: 'Gloom (JU 37)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Lickitung',
         tcgApiId: 'base2-38',
@@ -380,7 +380,7 @@ export const cardSeedBase2 = [
         searchName: 'Lickitung (JU 38)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Marowak',
         tcgApiId: 'base2-39',
@@ -390,7 +390,7 @@ export const cardSeedBase2 = [
         searchName: 'Marowak (JU 39)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Nidorina',
         tcgApiId: 'base2-40',
@@ -400,7 +400,7 @@ export const cardSeedBase2 = [
         searchName: 'Nidorina (JU 40)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Parasect',
         tcgApiId: 'base2-41',
@@ -410,7 +410,7 @@ export const cardSeedBase2 = [
         searchName: 'Parasect (JU 41)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Persian',
         tcgApiId: 'base2-42',
@@ -420,7 +420,7 @@ export const cardSeedBase2 = [
         searchName: 'Persian (JU 42)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Primeape',
         tcgApiId: 'base2-43',
@@ -430,7 +430,7 @@ export const cardSeedBase2 = [
         searchName: 'Primeape (JU 43)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Rapidash',
         tcgApiId: 'base2-44',
@@ -440,7 +440,7 @@ export const cardSeedBase2 = [
         searchName: 'Rapidash (JU 44)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Rhydon',
         tcgApiId: 'base2-45',
@@ -450,7 +450,7 @@ export const cardSeedBase2 = [
         searchName: 'Rhydon (JU 45)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Seaking',
         tcgApiId: 'base2-46',
@@ -460,7 +460,7 @@ export const cardSeedBase2 = [
         searchName: 'Seaking (JU 46)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Tauros',
         tcgApiId: 'base2-47',
@@ -470,7 +470,7 @@ export const cardSeedBase2 = [
         searchName: 'Tauros (JU 47)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Weepinbell',
         tcgApiId: 'base2-48',
@@ -480,7 +480,7 @@ export const cardSeedBase2 = [
         searchName: 'Weepinbell (JU 48)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Bellsprout',
         tcgApiId: 'base2-49',
@@ -490,7 +490,7 @@ export const cardSeedBase2 = [
         searchName: 'Bellsprout (JU 49)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Cubone',
         tcgApiId: 'base2-50',
@@ -500,7 +500,7 @@ export const cardSeedBase2 = [
         searchName: 'Cubone (JU 50)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Eevee',
         tcgApiId: 'base2-51',
@@ -510,7 +510,7 @@ export const cardSeedBase2 = [
         searchName: 'Eevee (JU 51)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Exeggcute',
         tcgApiId: 'base2-52',
@@ -520,7 +520,7 @@ export const cardSeedBase2 = [
         searchName: 'Exeggcute (JU 52)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Goldeen',
         tcgApiId: 'base2-53',
@@ -530,7 +530,7 @@ export const cardSeedBase2 = [
         searchName: 'Goldeen (JU 53)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Jigglypuff',
         tcgApiId: 'base2-54',
@@ -540,7 +540,7 @@ export const cardSeedBase2 = [
         searchName: 'Jigglypuff (JU 54)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Mankey',
         tcgApiId: 'base2-55',
@@ -550,7 +550,7 @@ export const cardSeedBase2 = [
         searchName: 'Mankey (JU 55)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Meowth',
         tcgApiId: 'base2-56',
@@ -560,7 +560,7 @@ export const cardSeedBase2 = [
         searchName: 'Meowth (JU 56)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Nidoran ♀',
         tcgApiId: 'base2-57',
@@ -570,7 +570,7 @@ export const cardSeedBase2 = [
         searchName: 'Nidoran ♀ (JU 57)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Oddish',
         tcgApiId: 'base2-58',
@@ -580,7 +580,7 @@ export const cardSeedBase2 = [
         searchName: 'Oddish (JU 58)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Paras',
         tcgApiId: 'base2-59',
@@ -590,7 +590,7 @@ export const cardSeedBase2 = [
         searchName: 'Paras (JU 59)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Pikachu',
         tcgApiId: 'base2-60',
@@ -600,7 +600,7 @@ export const cardSeedBase2 = [
         searchName: 'Pikachu (JU 60)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Rhyhorn',
         tcgApiId: 'base2-61',
@@ -610,7 +610,7 @@ export const cardSeedBase2 = [
         searchName: 'Rhyhorn (JU 61)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Spearow',
         tcgApiId: 'base2-62',
@@ -620,7 +620,7 @@ export const cardSeedBase2 = [
         searchName: 'Spearow (JU 62)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Venonat',
         tcgApiId: 'base2-63',
@@ -630,7 +630,7 @@ export const cardSeedBase2 = [
         searchName: 'Venonat (JU 63)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base2',
         name: 'Poké Ball',
         tcgApiId: 'base2-64',

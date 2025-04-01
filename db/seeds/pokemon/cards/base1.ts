@@ -1,6 +1,6 @@
 export const cardSeedBase1 = [
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Alakazam',
         tcgApiId: 'base1-1',
@@ -10,7 +10,7 @@ export const cardSeedBase1 = [
         searchName: 'Alakazam (BS 1)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Blastoise',
         tcgApiId: 'base1-2',
@@ -20,7 +20,7 @@ export const cardSeedBase1 = [
         searchName: 'Blastoise (BS 2)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Chansey',
         tcgApiId: 'base1-3',
@@ -30,7 +30,7 @@ export const cardSeedBase1 = [
         searchName: 'Chansey (BS 3)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Charizard',
         tcgApiId: 'base1-4',
@@ -40,7 +40,7 @@ export const cardSeedBase1 = [
         searchName: 'Charizard (BS 4)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Clefairy',
         tcgApiId: 'base1-5',
@@ -50,7 +50,7 @@ export const cardSeedBase1 = [
         searchName: 'Clefairy (BS 5)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Gyarados',
         tcgApiId: 'base1-6',
@@ -60,7 +60,7 @@ export const cardSeedBase1 = [
         searchName: 'Gyarados (BS 6)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Hitmonchan',
         tcgApiId: 'base1-7',
@@ -70,7 +70,7 @@ export const cardSeedBase1 = [
         searchName: 'Hitmonchan (BS 7)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Machamp',
         tcgApiId: 'base1-8',
@@ -80,7 +80,7 @@ export const cardSeedBase1 = [
         searchName: 'Machamp (BS 8)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Magneton',
         tcgApiId: 'base1-9',
@@ -90,7 +90,7 @@ export const cardSeedBase1 = [
         searchName: 'Magneton (BS 9)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Mewtwo',
         tcgApiId: 'base1-10',
@@ -100,7 +100,7 @@ export const cardSeedBase1 = [
         searchName: 'Mewtwo (BS 10)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Nidoking',
         tcgApiId: 'base1-11',
@@ -110,7 +110,7 @@ export const cardSeedBase1 = [
         searchName: 'Nidoking (BS 11)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Ninetales',
         tcgApiId: 'base1-12',
@@ -120,7 +120,7 @@ export const cardSeedBase1 = [
         searchName: 'Ninetales (BS 12)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Poliwrath',
         tcgApiId: 'base1-13',
@@ -130,7 +130,7 @@ export const cardSeedBase1 = [
         searchName: 'Poliwrath (BS 13)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Raichu',
         tcgApiId: 'base1-14',
@@ -140,7 +140,7 @@ export const cardSeedBase1 = [
         searchName: 'Raichu (BS 14)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Venusaur',
         tcgApiId: 'base1-15',
@@ -150,7 +150,7 @@ export const cardSeedBase1 = [
         searchName: 'Venusaur (BS 15)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Zapdos',
         tcgApiId: 'base1-16',
@@ -160,7 +160,7 @@ export const cardSeedBase1 = [
         searchName: 'Zapdos (BS 16)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Beedrill',
         tcgApiId: 'base1-17',
@@ -170,7 +170,7 @@ export const cardSeedBase1 = [
         searchName: 'Beedrill (BS 17)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Dragonair',
         tcgApiId: 'base1-18',
@@ -180,7 +180,7 @@ export const cardSeedBase1 = [
         searchName: 'Dragonair (BS 18)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Dugtrio',
         tcgApiId: 'base1-19',
@@ -190,7 +190,7 @@ export const cardSeedBase1 = [
         searchName: 'Dugtrio (BS 19)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Electabuzz',
         tcgApiId: 'base1-20',
@@ -200,7 +200,7 @@ export const cardSeedBase1 = [
         searchName: 'Electabuzz (BS 20)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Electrode',
         tcgApiId: 'base1-21',
@@ -210,7 +210,7 @@ export const cardSeedBase1 = [
         searchName: 'Electrode (BS 21)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pidgeotto',
         tcgApiId: 'base1-22',
@@ -220,7 +220,7 @@ export const cardSeedBase1 = [
         searchName: 'Pidgeotto (BS 22)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Arcanine',
         tcgApiId: 'base1-23',
@@ -230,7 +230,7 @@ export const cardSeedBase1 = [
         searchName: 'Arcanine (BS 23)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Charmeleon',
         tcgApiId: 'base1-24',
@@ -240,7 +240,7 @@ export const cardSeedBase1 = [
         searchName: 'Charmeleon (BS 24)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Dewgong',
         tcgApiId: 'base1-25',
@@ -250,7 +250,7 @@ export const cardSeedBase1 = [
         searchName: 'Dewgong (BS 25)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Dratini',
         tcgApiId: 'base1-26',
@@ -260,7 +260,7 @@ export const cardSeedBase1 = [
         searchName: 'Dratini (BS 26)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: "Farfetch'd",
         tcgApiId: 'base1-27',
@@ -270,7 +270,7 @@ export const cardSeedBase1 = [
         searchName: "Farfetch'd (BS 27)"
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Growlithe',
         tcgApiId: 'base1-28',
@@ -280,7 +280,7 @@ export const cardSeedBase1 = [
         searchName: 'Growlithe (BS 28)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Haunter',
         tcgApiId: 'base1-29',
@@ -290,7 +290,7 @@ export const cardSeedBase1 = [
         searchName: 'Haunter (BS 29)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Ivysaur',
         tcgApiId: 'base1-30',
@@ -300,7 +300,7 @@ export const cardSeedBase1 = [
         searchName: 'Ivysaur (BS 30)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Jynx',
         tcgApiId: 'base1-31',
@@ -310,7 +310,7 @@ export const cardSeedBase1 = [
         searchName: 'Jynx (BS 31)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Kadabra',
         tcgApiId: 'base1-32',
@@ -320,7 +320,7 @@ export const cardSeedBase1 = [
         searchName: 'Kadabra (BS 32)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Kakuna',
         tcgApiId: 'base1-33',
@@ -330,7 +330,7 @@ export const cardSeedBase1 = [
         searchName: 'Kakuna (BS 33)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Machoke',
         tcgApiId: 'base1-34',
@@ -340,7 +340,7 @@ export const cardSeedBase1 = [
         searchName: 'Machoke (BS 34)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Magikarp',
         tcgApiId: 'base1-35',
@@ -350,7 +350,7 @@ export const cardSeedBase1 = [
         searchName: 'Magikarp (BS 35)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Magmar',
         tcgApiId: 'base1-36',
@@ -360,7 +360,7 @@ export const cardSeedBase1 = [
         searchName: 'Magmar (BS 36)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Nidorino',
         tcgApiId: 'base1-37',
@@ -370,7 +370,7 @@ export const cardSeedBase1 = [
         searchName: 'Nidorino (BS 37)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Poliwhirl',
         tcgApiId: 'base1-38',
@@ -380,7 +380,7 @@ export const cardSeedBase1 = [
         searchName: 'Poliwhirl (BS 38)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Porygon',
         tcgApiId: 'base1-39',
@@ -390,7 +390,7 @@ export const cardSeedBase1 = [
         searchName: 'Porygon (BS 39)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Raticate',
         tcgApiId: 'base1-40',
@@ -400,7 +400,7 @@ export const cardSeedBase1 = [
         searchName: 'Raticate (BS 40)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Seel',
         tcgApiId: 'base1-41',
@@ -410,7 +410,7 @@ export const cardSeedBase1 = [
         searchName: 'Seel (BS 41)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Wartortle',
         tcgApiId: 'base1-42',
@@ -420,7 +420,7 @@ export const cardSeedBase1 = [
         searchName: 'Wartortle (BS 42)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Abra',
         tcgApiId: 'base1-43',
@@ -430,7 +430,7 @@ export const cardSeedBase1 = [
         searchName: 'Abra (BS 43)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Bulbasaur',
         tcgApiId: 'base1-44',
@@ -440,7 +440,7 @@ export const cardSeedBase1 = [
         searchName: 'Bulbasaur (BS 44)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Caterpie',
         tcgApiId: 'base1-45',
@@ -450,7 +450,7 @@ export const cardSeedBase1 = [
         searchName: 'Caterpie (BS 45)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Charmander',
         tcgApiId: 'base1-46',
@@ -460,7 +460,7 @@ export const cardSeedBase1 = [
         searchName: 'Charmander (BS 46)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Diglett',
         tcgApiId: 'base1-47',
@@ -470,7 +470,7 @@ export const cardSeedBase1 = [
         searchName: 'Diglett (BS 47)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Doduo',
         tcgApiId: 'base1-48',
@@ -480,7 +480,7 @@ export const cardSeedBase1 = [
         searchName: 'Doduo (BS 48)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Drowzee',
         tcgApiId: 'base1-49',
@@ -490,7 +490,7 @@ export const cardSeedBase1 = [
         searchName: 'Drowzee (BS 49)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Gastly',
         tcgApiId: 'base1-50',
@@ -500,7 +500,7 @@ export const cardSeedBase1 = [
         searchName: 'Gastly (BS 50)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Koffing',
         tcgApiId: 'base1-51',
@@ -510,7 +510,7 @@ export const cardSeedBase1 = [
         searchName: 'Koffing (BS 51)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Machop',
         tcgApiId: 'base1-52',
@@ -520,7 +520,7 @@ export const cardSeedBase1 = [
         searchName: 'Machop (BS 52)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Magnemite',
         tcgApiId: 'base1-53',
@@ -530,7 +530,7 @@ export const cardSeedBase1 = [
         searchName: 'Magnemite (BS 53)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Metapod',
         tcgApiId: 'base1-54',
@@ -540,7 +540,7 @@ export const cardSeedBase1 = [
         searchName: 'Metapod (BS 54)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Nidoran ♂',
         tcgApiId: 'base1-55',
@@ -550,7 +550,7 @@ export const cardSeedBase1 = [
         searchName: 'Nidoran ♂ (BS 55)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Onix',
         tcgApiId: 'base1-56',
@@ -560,7 +560,7 @@ export const cardSeedBase1 = [
         searchName: 'Onix (BS 56)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pidgey',
         tcgApiId: 'base1-57',
@@ -570,7 +570,7 @@ export const cardSeedBase1 = [
         searchName: 'Pidgey (BS 57)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pikachu',
         tcgApiId: 'base1-58',
@@ -580,7 +580,7 @@ export const cardSeedBase1 = [
         searchName: 'Pikachu (BS 58)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Poliwag',
         tcgApiId: 'base1-59',
@@ -590,7 +590,7 @@ export const cardSeedBase1 = [
         searchName: 'Poliwag (BS 59)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Ponyta',
         tcgApiId: 'base1-60',
@@ -600,7 +600,7 @@ export const cardSeedBase1 = [
         searchName: 'Ponyta (BS 60)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Rattata',
         tcgApiId: 'base1-61',
@@ -610,7 +610,7 @@ export const cardSeedBase1 = [
         searchName: 'Rattata (BS 61)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Sandshrew',
         tcgApiId: 'base1-62',
@@ -620,7 +620,7 @@ export const cardSeedBase1 = [
         searchName: 'Sandshrew (BS 62)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Squirtle',
         tcgApiId: 'base1-63',
@@ -630,7 +630,7 @@ export const cardSeedBase1 = [
         searchName: 'Squirtle (BS 63)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Starmie',
         tcgApiId: 'base1-64',
@@ -640,7 +640,7 @@ export const cardSeedBase1 = [
         searchName: 'Starmie (BS 64)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Staryu',
         tcgApiId: 'base1-65',
@@ -650,7 +650,7 @@ export const cardSeedBase1 = [
         searchName: 'Staryu (BS 65)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Tangela',
         tcgApiId: 'base1-66',
@@ -660,7 +660,7 @@ export const cardSeedBase1 = [
         searchName: 'Tangela (BS 66)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Voltorb',
         tcgApiId: 'base1-67',
@@ -670,7 +670,7 @@ export const cardSeedBase1 = [
         searchName: 'Voltorb (BS 67)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Vulpix',
         tcgApiId: 'base1-68',
@@ -680,7 +680,7 @@ export const cardSeedBase1 = [
         searchName: 'Vulpix (BS 68)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Weedle',
         tcgApiId: 'base1-69',
@@ -690,7 +690,7 @@ export const cardSeedBase1 = [
         searchName: 'Weedle (BS 69)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Clefairy Doll',
         tcgApiId: 'base1-70',
@@ -700,7 +700,7 @@ export const cardSeedBase1 = [
         searchName: 'Clefairy Doll (BS 70)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Computer Search',
         tcgApiId: 'base1-71',
@@ -710,7 +710,7 @@ export const cardSeedBase1 = [
         searchName: 'Computer Search (BS 71)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Devolution Spray',
         tcgApiId: 'base1-72',
@@ -720,7 +720,7 @@ export const cardSeedBase1 = [
         searchName: 'Devolution Spray (BS 72)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Impostor Professor Oak',
         tcgApiId: 'base1-73',
@@ -730,7 +730,7 @@ export const cardSeedBase1 = [
         searchName: 'Impostor Professor Oak (BS 73)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Item Finder',
         tcgApiId: 'base1-74',
@@ -740,7 +740,7 @@ export const cardSeedBase1 = [
         searchName: 'Item Finder (BS 74)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Lass',
         tcgApiId: 'base1-75',
@@ -750,7 +750,7 @@ export const cardSeedBase1 = [
         searchName: 'Lass (BS 75)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pokémon Breeder',
         tcgApiId: 'base1-76',
@@ -760,7 +760,7 @@ export const cardSeedBase1 = [
         searchName: 'Pokémon Breeder (BS 76)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pokémon Trader',
         tcgApiId: 'base1-77',
@@ -770,7 +770,7 @@ export const cardSeedBase1 = [
         searchName: 'Pokémon Trader (BS 77)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Scoop Up',
         tcgApiId: 'base1-78',
@@ -780,7 +780,7 @@ export const cardSeedBase1 = [
         searchName: 'Scoop Up (BS 78)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Super Energy Removal',
         tcgApiId: 'base1-79',
@@ -790,7 +790,7 @@ export const cardSeedBase1 = [
         searchName: 'Super Energy Removal (BS 79)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Defender',
         tcgApiId: 'base1-80',
@@ -800,7 +800,7 @@ export const cardSeedBase1 = [
         searchName: 'Defender (BS 80)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Energy Retrieval',
         tcgApiId: 'base1-81',
@@ -810,7 +810,7 @@ export const cardSeedBase1 = [
         searchName: 'Energy Retrieval (BS 81)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Full Heal',
         tcgApiId: 'base1-82',
@@ -820,7 +820,7 @@ export const cardSeedBase1 = [
         searchName: 'Full Heal (BS 82)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Maintenance',
         tcgApiId: 'base1-83',
@@ -830,7 +830,7 @@ export const cardSeedBase1 = [
         searchName: 'Maintenance (BS 83)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'PlusPower',
         tcgApiId: 'base1-84',
@@ -840,7 +840,7 @@ export const cardSeedBase1 = [
         searchName: 'PlusPower (BS 84)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pokémon Center',
         tcgApiId: 'base1-85',
@@ -850,7 +850,7 @@ export const cardSeedBase1 = [
         searchName: 'Pokémon Center (BS 85)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pokémon Flute',
         tcgApiId: 'base1-86',
@@ -860,7 +860,7 @@ export const cardSeedBase1 = [
         searchName: 'Pokémon Flute (BS 86)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Pokédex',
         tcgApiId: 'base1-87',
@@ -870,7 +870,7 @@ export const cardSeedBase1 = [
         searchName: 'Pokédex (BS 87)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Professor Oak',
         tcgApiId: 'base1-88',
@@ -880,7 +880,7 @@ export const cardSeedBase1 = [
         searchName: 'Professor Oak (BS 88)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Revive',
         tcgApiId: 'base1-89',
@@ -890,7 +890,7 @@ export const cardSeedBase1 = [
         searchName: 'Revive (BS 89)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Super Potion',
         tcgApiId: 'base1-90',
@@ -900,7 +900,7 @@ export const cardSeedBase1 = [
         searchName: 'Super Potion (BS 90)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Bill',
         tcgApiId: 'base1-91',
@@ -910,7 +910,7 @@ export const cardSeedBase1 = [
         searchName: 'Bill (BS 91)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Energy Removal',
         tcgApiId: 'base1-92',
@@ -920,7 +920,7 @@ export const cardSeedBase1 = [
         searchName: 'Energy Removal (BS 92)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Gust of Wind',
         tcgApiId: 'base1-93',
@@ -930,7 +930,7 @@ export const cardSeedBase1 = [
         searchName: 'Gust of Wind (BS 93)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Potion',
         tcgApiId: 'base1-94',
@@ -940,7 +940,7 @@ export const cardSeedBase1 = [
         searchName: 'Potion (BS 94)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Switch',
         tcgApiId: 'base1-95',
@@ -950,7 +950,7 @@ export const cardSeedBase1 = [
         searchName: 'Switch (BS 95)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Double Colorless Energy',
         tcgApiId: 'base1-96',
@@ -960,7 +960,7 @@ export const cardSeedBase1 = [
         searchName: 'Double Colorless Energy (BS 96)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Fighting Energy',
         tcgApiId: 'base1-97',
@@ -970,7 +970,7 @@ export const cardSeedBase1 = [
         searchName: 'Fighting Energy (BS 97)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Fire Energy',
         tcgApiId: 'base1-98',
@@ -980,7 +980,7 @@ export const cardSeedBase1 = [
         searchName: 'Fire Energy (BS 98)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Grass Energy',
         tcgApiId: 'base1-99',
@@ -990,7 +990,7 @@ export const cardSeedBase1 = [
         searchName: 'Grass Energy (BS 99)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Lightning Energy',
         tcgApiId: 'base1-100',
@@ -1000,7 +1000,7 @@ export const cardSeedBase1 = [
         searchName: 'Lightning Energy (BS 100)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Psychic Energy',
         tcgApiId: 'base1-101',
@@ -1010,7 +1010,7 @@ export const cardSeedBase1 = [
         searchName: 'Psychic Energy (BS 101)'
     },
     {
-        tcgId: 1,
+        tcgId: 'pokemon',
         setId: 'base1',
         name: 'Water Energy',
         tcgApiId: 'base1-102',

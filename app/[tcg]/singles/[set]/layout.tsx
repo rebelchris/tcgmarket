@@ -6,8 +6,6 @@ export default async function TCGLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <main className='flex flex-1 bg-purple-50'>{children}</main>
-    </>
+    <div className='container mx-auto flex flex-col gap-4'>{children}</div>
   );
 }

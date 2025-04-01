@@ -1,12 +1,7 @@
-import {Box, Container} from "@radix-ui/themes";
-
 export default function PrivacyPage() {
     return (
-        <Container size="2">
-            <Box px={{
-                initial: '6',
-                lg: '0'
-            }} className='prose'>
+        <div>
+            <div className='prose'>
                 <h1>Privacy Policy</h1>
                 <p>Last updated: February 13, 2025</p>
                 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of
@@ -327,7 +322,7 @@ export default function PrivacyPage() {
                 <ul>
                     <li>By email: chrisbongers@gmail.com</li>
                 </ul>
-            </Box>
-        </Container>
+            </div>
+        </div>
     )
 }

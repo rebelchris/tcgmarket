@@ -45,7 +45,7 @@ CREATE TABLE "authenticator" (
 --> statement-breakpoint
 CREATE TABLE "cards" (
 	"id" text PRIMARY KEY NOT NULL,
-	"tcg_id" integer,
+	"tcg_id" varchar(50),
 	"set_id" varchar,
 	"name" varchar(255) NOT NULL,
 	"search_name" varchar(255) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE "session" (
 --> statement-breakpoint
 CREATE TABLE "sets" (
 	"id" varchar(20) PRIMARY KEY NOT NULL,
-	"tcg_id" integer,
+	"tcg_id" varchar(50),
 	"name" varchar(100) NOT NULL,
 	"series" varchar(50) NOT NULL,
 	"printed_total" integer,
@@ -99,9 +99,10 @@ CREATE TABLE "sets" (
 );
 --> statement-breakpoint
 CREATE TABLE "tcgs" (
-	"id" serial PRIMARY KEY NOT NULL,
+	"id" varchar(50) PRIMARY KEY NOT NULL,
 	"name" varchar(50) NOT NULL,
 	"created_at" timestamp DEFAULT now(),
+	"logo_url" text,
 	"slug" text GENERATED ALWAYS AS (slugify("tcgs"."name")) STORED,
 	CONSTRAINT "tcgs_name_unique" UNIQUE("name")
 );
