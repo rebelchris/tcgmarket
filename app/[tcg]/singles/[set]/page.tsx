@@ -1,11 +1,14 @@
-import {getCardsBySet} from '@/app/actions';
+import {getCardsBySet, getSets} from '@/app/actions';
 import Link from 'next/link';
 import Breadcrumb from '@/app/components/Breadcrumb.tsx';
 
-export const dynamicParams = true
+export const dynamic = 'force-static'
 
 export async function generateStaticParams() {
-    return [];
+    const sets = await getSets();
+    return sets.map((set) => ({
+        set: set.slug,
+    }));
 }
 
 export default async function Page({
