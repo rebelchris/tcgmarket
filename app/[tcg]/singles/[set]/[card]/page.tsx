@@ -1,12 +1,5 @@
-import {getCards} from "@/app/actions";
-
-export const dynamic = 'force-static'
-
 export async function generateStaticParams() {
-    const tcgs = await getCards();
-    return tcgs.map((post) => ({
-        card: post.slug,
-    }))
+    return []
 }
 
 export default async function Page({
