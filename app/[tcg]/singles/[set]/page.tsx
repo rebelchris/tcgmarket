@@ -2,6 +2,8 @@ import {getCardsBySet} from '@/app/actions';
 import Link from 'next/link';
 import Breadcrumb from '@/app/components/Breadcrumb.tsx';
 
+export const dynamicParams = true
+
 export async function generateStaticParams() {
     return [];
 }
