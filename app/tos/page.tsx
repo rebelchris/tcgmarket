@@ -1,12 +1,7 @@
-import {Box, Container} from "@radix-ui/themes";
-
 export default function TOSPage() {
     return (
-        <Container size="2">
-            <Box px={{
-                initial: '6',
-                lg: '0'
-            }} className='prose'>
+        <div>
+            <div className='prose'>
                 <h1>TCGmarket Terms of Service</h1>
 
                 <p>Welcome to TCGmarket (https://tcgmarket.co.za/). By accessing or using our platform, you agree to be
@@ -89,7 +84,7 @@ export default function TOSPage() {
 
                 <h2>13. Contact Us</h2>
                 <p>If you have any questions about these Terms, please contact me at: chrisbongers@gmail.com</p>
-            </Box>
-        </Container>
+            </div>
+        </div>
     )
 }
