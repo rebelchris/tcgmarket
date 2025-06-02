@@ -1,13 +1,30 @@
-import { getListingsByCard } from '@/app/actions';
+import { getListingsByCard } from '@/app/actions.ts';
 import ConditionTag from '@/app/components/ConditionTag.tsx';
+import Link from 'next/link';
+import { auth } from 'auth';
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ card: string }>;
+  params: Promise<{ tcg: string; set: string; card: string }>;
 }) {
-  const { card } = await params;
+  const { tcg, card } = await params;
   const listings = await getListingsByCard(card);
+  const session = await auth();
+  const userId = session?.user?.id;
+
+  let userListings: typeof listings = [];
+  let otherListings: typeof listings = listings;
+  if (userId) {
+    userListings = listings
+      .filter((l) => l.user_id === userId)
+      .sort(
+        (a, b) =>
+          new Date(b.created_at ?? 0).getTime() -
+          new Date(a.created_at ?? 0).getTime()
+      );
+    otherListings = listings.filter((l) => l.user_id !== userId);
+  }
 
   return (
     <div className='gap-4 flex flex-col'>
@@ -20,6 +37,12 @@ export default async function Page({
             <table className='min-w-full divide-y divide-gray-200'>
               <thead className='bg-gray-50'>
                 <tr>
+                  <th
+                    scope='col'
+                    className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'
+                  >
+                    Quantity
+                  </th>
                   <th
                     scope='col'
                     className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'
@@ -42,41 +65,115 @@ export default async function Page({
                     scope='col'
                     className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'
                   >
-                    Quantity
+                    Description
                   </th>
-                  <th
-                    scope='col'
-                    className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'
-                  >
-                    Actions
-                  </th>
+                  {userListings.length > 0 && (
+                    <th
+                      scope='col'
+                      className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'
+                    >
+                      Options
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody className='bg-white divide-y divide-gray-200'>
-                {listings.map((listing, index) => (
+                {userListings.map((listing, index) => (
                   <tr
                     key={listing.id}
                     className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
                   >
+                    <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
+                      {listing.quantity}
+                    </td>
                     <td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900'>
-                      {listing.name}
+                      <Link
+                        href={`/${tcg}/users/${listing.user_id}`}
+                        className='text-blue-600 hover:text-blue-800 hover:underline'
+                      >
+                        {listing.name ?? ''}
+                      </Link>
                     </td>
                     <td className='px-6 py-4 whitespace-nowrap text-sm'>
-                      <ConditionTag condition={listing.condition} size='sm' />
+                      <ConditionTag
+                        condition={listing.condition ?? ''}
+                        size='sm'
+                      />
                     </td>
                     <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
                       R{listing.price}
                     </td>
                     <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
-                      {listing.quantity}
+                      {listing.notes ?? '-'}
                     </td>
                     <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
-                      <button
-                        type='button'
-                        className='text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-xs'
+                      <div className='flex gap-2 items-center'>
+                        <button
+                          type='button'
+                          className='px-2 py-1 bg-gray-100 rounded hover:bg-gray-200 text-xs border border-gray-200'
+                        >
+                          -
+                        </button>
+                        <span>{listing.quantity}</span>
+                        <button
+                          type='button'
+                          className='px-2 py-1 bg-gray-100 rounded hover:bg-gray-200 text-xs border border-gray-200'
+                        >
+                          +
+                        </button>
+                        <button
+                          type='button'
+                          className='px-2 py-1 bg-gray-100 rounded hover:bg-gray-200 text-xs border border-gray-200'
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type='button'
+                          className='px-2 py-1 bg-red-100 rounded hover:bg-red-200 text-xs border border-red-200 text-red-700'
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+                {userListings.length > 0 && otherListings.length > 0 && (
+                  <tr>
+                    <td
+                      colSpan={userListings.length > 0 ? 6 : 5}
+                      className='py-2 text-center text-xs text-gray-400 bg-gray-100'
+                    >
+                      Other Sellers
+                    </td>
+                  </tr>
+                )}
+                {otherListings.map((listing, index) => (
+                  <tr
+                    key={listing.id}
+                    className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
+                  >
+                    <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
+                      {listing.quantity}
+                    </td>
+                    <td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900'>
+                      <Link
+                        href={`/${tcg}/users/${listing.user_id}`}
+                        className='text-blue-600 hover:text-blue-800 hover:underline'
                       >
-                        Add to Cart
-                      </button>
+                        {listing.name ?? ''}
+                      </Link>
+                    </td>
+                    <td className='px-6 py-4 whitespace-nowrap text-sm'>
+                      <ConditionTag
+                        condition={listing.condition ?? ''}
+                        size='sm'
+                      />
+                    </td>
+                    <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
+                      R{listing.price}
+                    </td>
+                    <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-500'>
+                      {listing.notes ?? '-'}
                     </td>
                   </tr>
                 ))}

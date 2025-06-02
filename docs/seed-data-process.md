@@ -11,6 +11,31 @@ The platform currently supports the following TCGs:
 3. **One Piece** - Basic seed data available
 4. **Digimon** - Scripts prepared to generate data
 
+## Running Pokémon Seed Scripts
+
+> **Note:** You must run the Pokémon sets script _before_ the cards script, as the cards script depends on the set list.
+
+### 1. Fetch Pokémon Sets
+
+This script fetches the latest Pokémon set list from the official repo and updates `db/seeds/pokemon/sets.ts`.
+
+```bash
+npx ts-node scripts/fetch-pokemon-tcg-sets.ts
+```
+
+- Requires Node.js 18+ (for global `fetch` support) and `ts-node` (or use `tsx` if preferred).
+
+### 2. Fetch Pokémon Cards
+
+This script fetches all cards for each set listed in `db/seeds/pokemon/sets.ts` and writes them to `db/seeds/pokemon/cards/`.
+
+```bash
+npx ts-node scripts/fetch-pokemon-tcg-data.ts
+```
+
+- Make sure you have run the sets script first so the set list is up to date.
+- The script will create or update a `.ts` file for each set in the cards folder.
+
 ## Adding Seed Data for a New TCG
 
 ### Step 1: Setup Database Entry

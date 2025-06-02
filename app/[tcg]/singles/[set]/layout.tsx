@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default async function TCGLayout({
+export default async function TCGCardLayout({
   children,
 }: {
   children: React.ReactNode;

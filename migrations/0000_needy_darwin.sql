@@ -51,7 +51,7 @@ CREATE TABLE "cards" (
 	"search_name" varchar(255) NOT NULL,
 	"tcg_api_id" text,
 	"number" varchar(20),
-	"rarity" varchar(20),
+	"rarity" varchar(35),
 	"metadata" jsonb DEFAULT '{}'::jsonb NOT NULL,
 	"images" jsonb DEFAULT '{}'::jsonb NOT NULL,
 	"created_at" timestamp DEFAULT now(),
@@ -61,7 +61,7 @@ CREATE TABLE "cards" (
 CREATE TABLE "listings" (
 	"id" text PRIMARY KEY NOT NULL,
 	"userId" text NOT NULL,
-	"card_id" text,
+	"card_id" text NOT NULL,
 	"list_id" text NOT NULL,
 	"condition" "condition" DEFAULT 'near_mint',
 	"price" numeric(12, 2) NOT NULL,

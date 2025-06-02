@@ -4,6 +4,16 @@ import { setsSeed } from '@/db/seeds/sets';
 import { cardsSeed } from '@/db/seeds/cards';
 import generateListingsSeed from '@/db/seeds/listings';
 
+const BATCH_SIZE = 100;
+
+async function batchInsert<T>(table: any, values: T[]) {
+  const batches = [];
+  for (let i = 0; i < values.length; i += BATCH_SIZE) {
+    batches.push(db.insert(table).values(values.slice(i, i + BATCH_SIZE)));
+  }
+  await Promise.all(batches);
+}
+
 const main = async () => {
   console.log('Seed start');
 
@@ -32,22 +42,20 @@ const main = async () => {
 
   await db.insert(sets).values(setsSeed);
 
-  // @ts-expect-error - Skip type checking for seeding data
-  await db.insert(cards).values(cardsSeed);
+  // Batch insert cards
+  await batchInsert(cards, cardsSeed);
 
   // Generate and insert the listings
   console.log('Generating listings...');
   const listingsSeed = await generateListingsSeed();
 
-  // Cast the condition field to ensure it matches the enum type
   const typedListings = listingsSeed.map((listing) => ({
     ...listing,
-    // Price needs to be numeric in Postgres
     price: Number(listing.price),
   }));
 
-  // @ts-expect-error - Skip type checking for seeding data
-  await db.insert(listings).values(typedListings);
+  // Batch insert listings
+  await batchInsert(listings, typedListings);
   console.log(`Created ${listingsSeed.length} listings`);
 
   console.log('Seed done');
