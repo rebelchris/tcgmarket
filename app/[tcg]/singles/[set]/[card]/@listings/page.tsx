@@ -3,11 +3,10 @@ import ConditionTag from '@/app/components/ConditionTag.tsx';
 import Link from 'next/link';
 import { auth } from 'auth';
 
-export default async function Page({
-  params,
-}: {
-  params: { tcg: string; set: string; card: string };
+export default async function Page(props: {
+  params: Promise<{ tcg: string; set: string; card: string }>;
 }) {
+  const params = await props.params;
   const { tcg, card } = params;
   const listings = await getListingsByCard(card);
   const session = await auth();

@@ -6,23 +6,21 @@ import Image from 'next/image';
 import CardTabs from './CardTabs';
 import { auth } from 'auth';
 
-export default async function Layout({
-  info,
-  sell,
-  wants,
-  listings,
-  params,
-}: {
+export default async function Layout(props: {
   info: React.ReactNode;
   sell: React.ReactNode;
   wants: React.ReactNode;
   listings: React.ReactNode;
-  params: {
+  params: Promise<{
     tcg: string;
     set: string;
     card: string;
-  };
+  }>;
 }) {
+  const params = await props.params;
+
+  const { info, sell, wants, listings } = props;
+
   const { tcg, set, card } = params;
 
   // Fetch data for breadcrumbs if available
