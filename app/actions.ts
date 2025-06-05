@@ -6,17 +6,23 @@ import { auth } from 'auth';
 import { db } from '../db/drizzle';
 import { cards, listings, sets, tcgs, users, userLists } from '../db/schema';
 
-export const getListings = async () =>
-  db
-    .select({
-      id: listings.id,
-      name: cards.name,
-      price: listings.price,
-      email: users.email,
-    })
-    .from(listings)
-    .innerJoin(cards, eq(listings.cardId, cards.id))
-    .innerJoin(users, eq(listings.userId, users.id));
+export const getListings = async () => {
+  try {
+    return db
+      .select({
+        id: listings.id,
+        name: cards.name,
+        price: listings.price,
+        email: users.email,
+      })
+      .from(listings)
+      .innerJoin(cards, eq(listings.cardId, cards.id))
+      .innerJoin(users, eq(listings.userId, users.id));
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+};
 
 export const getTCGs = cache(async () =>
   db
