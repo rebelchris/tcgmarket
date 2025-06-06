@@ -1,16 +1,12 @@
 import { getCard, getListingsByCard } from '@/app/actions';
 import Link from 'next/link';
-import PriceChart from '@/app/components/PriceChart';
+import PriceTrends from '@/app/components/PriceTrends';
+import CardImageResponsive from '@/app/components/CardImageResponsive';
 
 type Listing = {
   price: number;
   quantity: number;
   created_at: string;
-};
-
-type PriceDataPoint = {
-  day: number;
-  price: number;
 };
 
 function filterByDays(listings: Listing[], days: number): Listing[] {
@@ -27,54 +23,6 @@ function weightedAverage(listings: Listing[]): number {
     0,
   );
   return totalQuantity > 0 ? totalValue / totalQuantity : 0;
-}
-
-function getPriceTrendData(
-  listings: Listing[],
-  days: number,
-): PriceDataPoint[] {
-  const now = new Date();
-  // Create an array for each day, 0 = oldest (30 days ago), days = today
-  const dayBuckets: { day: number; prices: number[] }[] = Array.from(
-    { length: days + 1 },
-    (_, i) => ({
-      day: i,
-      prices: [],
-    }),
-  );
-
-  listings.forEach((listing) => {
-    const created = new Date(listing.created_at);
-    // Compare only the calendar day
-    const nowDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const createdDate = new Date(
-      created.getFullYear(),
-      created.getMonth(),
-      created.getDate(),
-    );
-    const diffDays = Math.floor(
-      (nowDate.getTime() - createdDate.getTime()) / (1000 * 60 * 60 * 24),
-    );
-    const bucketIndex = days - diffDays;
-    if (bucketIndex >= 0 && bucketIndex <= days) {
-      let i = 0;
-      while (i < (listing.quantity || 1)) {
-        dayBuckets[bucketIndex].prices.push(listing.price);
-        i += 1;
-      }
-    }
-  });
-
-  return dayBuckets.map((bucket) => ({
-    day: bucket.day,
-    price:
-      bucket.prices.length > 0
-        ? Math.round(
-          (bucket.prices.reduce((a, b) => a + b, 0) / bucket.prices.length) *
-              100,
-        ) / 100
-        : 0,
-  }));
 }
 
 export default async function Page({
@@ -112,7 +60,6 @@ export default async function Page({
   const avg7 = weightedAverage(filterByDays(normalizedListings, 7));
   const avg1 = weightedAverage(filterByDays(normalizedListings, 1));
 
-  const priceTrendData = getPriceTrendData(normalizedListings, 30);
 
   if (!data) {
     return <p className="text-center py-4 text-gray-500">Card not found</p>;
@@ -145,6 +92,7 @@ export default async function Page({
         <div className="flex flex-col md:flex-row gap-6">
           {/* Card Details */}
           <div className="flex-grow">
+            <CardImageResponsive src={data.images?.large ?? ''} alt={data.name} hideDesktop />
             <dl className="space-y-3">
               {cardData.map(({ label, value }) => (
                 <div
@@ -158,13 +106,7 @@ export default async function Page({
             </dl>
           </div>
 
-          {/* Price Trend Graph */}
-          <div className="flex-shrink-0 min-w-[300px] border-l border-gray-100 pl-6">
-            <h3 className="font-semibold text-gray-700 mb-2">
-              Price Trend (30 days)
-            </h3>
-            <PriceChart data={priceTrendData} days={30} currencySymbol="R" />
-          </div>
+          <PriceTrends listings={normalizedListings} hideMobile />
         </div>
       </div>
     </div>

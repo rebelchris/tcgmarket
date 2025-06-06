@@ -1,20 +1,22 @@
 import React from 'react';
 import { getTCG, getCard } from '@/app/actions';
 import Breadcrumb from '@/app/components/Breadcrumb';
-import Image from 'next/image';
 import { auth } from 'auth';
 import CardTabs from './CardTabs';
+import CardImageResponsive from '../../../../components/CardImageResponsive';
 
 export default async function Layout({
   info,
   sell,
   wants,
+  chart,
   listings,
   params,
 }: {
   info: React.ReactNode;
   sell: React.ReactNode;
   wants: React.ReactNode;
+  chart: React.ReactNode;
   listings: React.ReactNode;
   params: Promise<{
     tcg: string;
@@ -64,28 +66,14 @@ export default async function Layout({
 
       <div className="mt-6 bg-white rounded-lg shadow-sm overflow-hidden">
         <div className="flex flex-row">
-          {/* Left: Card Image */}
-          <div className="flex-shrink-0 p-6 border-r border-gray-100 flex flex-col items-center">
-            {cardData?.images?.large ? (
-              <Image
-                src={cardData.images.large}
-                alt={cardData.name}
-                width={200}
-                height={280}
-                className="rounded-md shadow-sm"
-              />
-            ) : (
-              <div className="w-[200px] h-[280px] bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-400">No image</span>
-              </div>
-            )}
-          </div>
+          <CardImageResponsive src={cardData?.images?.large ?? ''} alt={cardData?.name ?? ''} hideMobile />
           {/* Right: Tabs and Content */}
           <div className="flex-grow p-6">
             <CardTabs
               info={info}
               sell={sell}
               wants={wants}
+              chart={chart}
               user={session?.user}
             />
           </div>

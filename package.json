@@ -13,6 +13,7 @@
     "@auth/core": "^0.37.4",
     "@auth/drizzle-adapter": "^1.7.4",
     "@headlessui/react": "^2.2.0",
+    "@kickass-coderz/react": "^0.0.4",
     "axios": "^1.8.4",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
