@@ -46,7 +46,7 @@ async function fetchOnePieceSets(): Promise<OnePieceSet[]> {
   try {
     // Fetch from the official One Piece card game website
     const response = await axios.get(
-      'https://en.onepiece-cardgame.com/cardlist/'
+      'https://en.onepiece-cardgame.com/cardlist/',
     );
     const dom = new JSDOM(response.data);
     const document = dom.window.document;
@@ -154,7 +154,7 @@ async function fetchCardsForSet(setId: string): Promise<OnePieceCard[]> {
 
         // Fetch individual card details to get more information
         const cardDetailResponse = await axios.get(
-          `https://en.onepiece-cardgame.com${cardUrl}`
+          `https://en.onepiece-cardgame.com${cardUrl}`,
         );
         const cardDom = new JSDOM(cardDetailResponse.data);
         const cardDoc = cardDom.window.document;
@@ -260,9 +260,9 @@ function updateSetTotal(setId: string, cardCount: number) {
       const setsContent = fs.readFileSync(setFilePath, 'utf8');
       const updatedContent = setsContent.replace(
         new RegExp(
-          `(id:\\s*['"]${setId}['"][^}]*printedTotal:\\s*)(\\d+)([^}]*total:\\s*)(\\d+)`
+          `(id:\\s*['"]${setId}['"][^}]*printedTotal:\\s*)(\\d+)([^}]*total:\\s*)(\\d+)`,
         ),
-        `$1${cardCount}$3${cardCount}`
+        `$1${cardCount}$3${cardCount}`,
       );
 
       fs.writeFileSync(setFilePath, updatedContent);
@@ -421,7 +421,7 @@ async function main() {
             cardsContent += `    name: "${card.name.replace(/"/g, '\\"')}",\n`;
             cardsContent += `    searchName: "${card.searchName.replace(
               /"/g,
-              '\\"'
+              '\\"',
             )}",\n`;
             cardsContent += `    tcgApiId: "${card.tcgApiId}",\n`;
             cardsContent += `    number: "${card.number}",\n`;
@@ -458,7 +458,7 @@ async function main() {
 
           fs.writeFileSync(
             path.join(onePieceCardsDir, `${setId}.ts`),
-            cardsContent
+            cardsContent,
           );
 
           // Update index imports and exports
@@ -482,7 +482,7 @@ async function main() {
     indexExports += '];\n';
     fs.writeFileSync(
       path.join(onePieceCardsDir, 'index.ts'),
-      indexImports + '\n' + indexExports
+      indexImports + '\n' + indexExports,
     );
 
     console.log('One Piece data fetching complete!');

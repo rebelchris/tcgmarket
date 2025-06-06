@@ -1,8 +1,8 @@
-import { config } from "dotenv";
+import { config } from 'dotenv';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import * as schema from './schema';
-config({ path: ".env" }); // or .env.local
+config({ path: '.env' }); // or .env.local
 export const db = drizzle(process.env.DATABASE_URL!, {
-    schema,
-    logger: true
+  schema,
+  logger: true,
 });

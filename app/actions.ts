@@ -33,7 +33,7 @@ export const getTCGs = cache(async () =>
       logo: tcgs.logoUrl,
     })
     .from(tcgs)
-    .orderBy(tcgs.name)
+    .orderBy(tcgs.name),
 );
 
 export const getSets = cache(async (tcgId: string) =>
@@ -45,11 +45,11 @@ export const getSets = cache(async (tcgId: string) =>
       tcgId: sets.tcgId,
     })
     .from(sets)
-    .where(eq(sets.tcgId, tcgId))
+    .where(eq(sets.tcgId, tcgId)),
 );
 
 export const getTCG = cache(async (slug: string) =>
-  db.query.tcgs.findFirst({ where: eq(tcgs.slug, slug) })
+  db.query.tcgs.findFirst({ where: eq(tcgs.slug, slug) }),
 );
 
 export const getCards = async (tcgId: string) =>
@@ -94,7 +94,7 @@ export const getCard = cache(async (slug: string) =>
     with: {
       set: true,
     },
-  })
+  }),
 );
 
 export const getListingsByCard = async (slug: string) =>
@@ -152,8 +152,8 @@ export const searchCard = async ({
     .where(
       and(
         sql`to_tsvector('english', ${cards.name}) @@ to_tsquery('english', ${endQuery})`,
-        eq(cards.tcgId, tcgId)
-      )
+        eq(cards.tcgId, tcgId),
+      ),
     )
     .innerJoin(sets, eq(cards.setId, sets.id));
   return data;

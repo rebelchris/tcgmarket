@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 
 export default function CardTabs({
@@ -21,7 +22,7 @@ export default function CardTabs({
 
   return (
     <div>
-      <div className='flex border-b mb-4'>
+      <div className="flex border-b mb-4">
         <button
           className={`px-4 py-2 font-semibold border-b-2 ${
             tab === 'info'
@@ -29,7 +30,7 @@ export default function CardTabs({
               : 'border-transparent text-gray-500 hover:text-blue-600'
           }`}
           onClick={() => setTab('info')}
-          type='button'
+          type="button"
         >
           Info
         </button>
@@ -42,7 +43,7 @@ export default function CardTabs({
                   : 'border-transparent text-gray-500 hover:text-blue-600'
               }`}
               onClick={() => setTab('sell')}
-              type='button'
+              type="button"
             >
               Sell
             </button>
@@ -53,7 +54,7 @@ export default function CardTabs({
                   : 'border-transparent text-gray-500 hover:text-blue-600'
               }`}
               onClick={() => setTab('wants')}
-              type='button'
+              type="button"
             >
               Wants
             </button>
@@ -68,3 +69,7 @@ export default function CardTabs({
     </div>
   );
 }
+
+CardTabs.defaultProps = {
+  user: undefined,
+};

@@ -22,37 +22,37 @@ const menuItems = [
   },
 ];
 
-export const ProfileDropdown = ({ activeIndex }) => {
+export function ProfileDropdown({ activeIndex }: { activeIndex: number }) {
   return (
-    <div className='absolute right-0 w-64 mt-2 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 border border-indigo-500/30 rounded-xl shadow-2xl'>
-      <div className='px-4 py-3 border-b border-indigo-500/30'>
-        <p className='text-sm font-medium text-white'>My Account</p>
+    <div className="absolute right-0 w-64 mt-2 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 border border-indigo-500/30 rounded-xl shadow-2xl">
+      <div className="px-4 py-3 border-b border-indigo-500/30">
+        <p className="text-sm font-medium text-white">My Account</p>
       </div>
-      <div className='py-2'>
+      <div className="py-2">
         {menuItems.map((item, index) => (
           <a
             onClick={item?.action}
             key={item.label}
-            href='#'
+            href="#"
             className={`flex items-center gap-3 px-4 py-2.5 text-sm text-gray-200 hover:bg-indigo-600/20 transition-colors duration-150 ${
               index === activeIndex
                 ? 'bg-indigo-600/30 border-l-2 border-indigo-500'
                 : 'border-l-2 border-transparent'
             }`}
-            role='menuitem'
+            role="menuitem"
             tabIndex={0}
           >
-            <div className='p-1.5 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-700'>
+            <div className="p-1.5 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-700">
               <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='h-4 w-4 text-white'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
                 <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   strokeWidth={2}
                   d={item.icon}
                 />
@@ -62,11 +62,11 @@ export const ProfileDropdown = ({ activeIndex }) => {
           </a>
         ))}
       </div>
-      <div className='px-4 py-2 mt-1 bg-indigo-900/30 text-xs text-indigo-300'>
+      <div className="px-4 py-2 mt-1 bg-indigo-900/30 text-xs text-indigo-300">
         <p>TCGmarket © 2025</p>
       </div>
     </div>
   );
-};
+}
 
 export default ProfileDropdown;

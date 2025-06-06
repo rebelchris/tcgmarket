@@ -1,12 +1,17 @@
 import React from 'react';
 import { getTCG, getCard } from '@/app/actions';
-import Link from 'next/link';
-import Breadcrumb from '@/app/components/Breadcrumb.tsx';
+import Breadcrumb from '@/app/components/Breadcrumb';
 import Image from 'next/image';
-import CardTabs from './CardTabs';
 import { auth } from 'auth';
+import CardTabs from './CardTabs';
 
-export default async function Layout(props: {
+export default async function Layout({
+  info,
+  sell,
+  wants,
+  listings,
+  params,
+}: {
   info: React.ReactNode;
   sell: React.ReactNode;
   wants: React.ReactNode;
@@ -17,11 +22,7 @@ export default async function Layout(props: {
     card: string;
   }>;
 }) {
-  const params = await props.params;
-
-  const { info, sell, wants, listings } = props;
-
-  const { tcg, set, card } = params;
+  const { tcg, set, card } = await params;
 
   // Fetch data for breadcrumbs if available
   let tcgData;
@@ -57,30 +58,30 @@ export default async function Layout(props: {
   ];
 
   return (
-    <div className='container mx-auto px-6 py-8'>
+    <div className="container mx-auto px-6 py-8">
       {/* Breadcrumb navigation */}
       <Breadcrumb items={breadcrumbItems} />
 
-      <div className='mt-6 bg-white rounded-lg shadow-sm overflow-hidden'>
-        <div className='flex flex-row'>
+      <div className="mt-6 bg-white rounded-lg shadow-sm overflow-hidden">
+        <div className="flex flex-row">
           {/* Left: Card Image */}
-          <div className='flex-shrink-0 p-6 border-r border-gray-100 flex flex-col items-center'>
+          <div className="flex-shrink-0 p-6 border-r border-gray-100 flex flex-col items-center">
             {cardData?.images?.large ? (
               <Image
                 src={cardData.images.large}
                 alt={cardData.name}
                 width={200}
                 height={280}
-                className='rounded-md shadow-sm'
+                className="rounded-md shadow-sm"
               />
             ) : (
-              <div className='w-[200px] h-[280px] bg-gray-200 rounded-md flex items-center justify-center'>
-                <span className='text-gray-400'>No image</span>
+              <div className="w-[200px] h-[280px] bg-gray-200 rounded-md flex items-center justify-center">
+                <span className="text-gray-400">No image</span>
               </div>
             )}
           </div>
           {/* Right: Tabs and Content */}
-          <div className='flex-grow p-6'>
+          <div className="flex-grow p-6">
             <CardTabs
               info={info}
               sell={sell}
@@ -90,7 +91,7 @@ export default async function Layout(props: {
           </div>
         </div>
         {/* Listings always below */}
-        <div className='p-6 border-t border-gray-100'>{listings}</div>
+        <div className="p-6 border-t border-gray-100">{listings}</div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { getCard } from '@/app/actions';
-import SellPanelClient from './SellPanelClient';
 import React from 'react';
+import SellPanelClient from './SellPanelClient';
 
 export default async function SellPanel({
   params,
@@ -9,6 +9,6 @@ export default async function SellPanel({
 }) {
   const { card } = await params;
   const data = await getCard(card);
-  if (!data) return <div className='text-red-600'>Card not found</div>;
+  if (!data) return <div className="text-red-600">Card not found</div>;
   return <SellPanelClient cardId={data.id} />;
 }

@@ -194,7 +194,7 @@ async function main() {
     // Sort sets by release date to process newest first
     const sortedSets = [...sets].sort(
       (a, b) =>
-        new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime()
+        new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime(),
     );
 
     // Process only the 5 most recent sets
@@ -221,7 +221,7 @@ async function main() {
             cardsContent += `    name: "${card.name.replace(/"/g, '\\"')}",\n`;
             cardsContent += `    searchName: "${card.searchName.replace(
               /"/g,
-              '\\"'
+              '\\"',
             )}",\n`;
             cardsContent += `    tcgApiId: "${card.tcgApiId}",\n`;
             cardsContent += `    number: "${card.number}",\n`;
@@ -241,7 +241,7 @@ async function main() {
 
             cardsContent += `      type: "${(card.metadata.type || '').replace(
               /"/g,
-              '\\"'
+              '\\"',
             )}",\n`;
             cardsContent += `      manaCost: "${(
               card.metadata.manaCost || ''
@@ -272,7 +272,7 @@ async function main() {
 
           fs.writeFileSync(
             path.join(mtgCardsDir, `${setCode}.ts`),
-            cardsContent
+            cardsContent,
           );
           console.log(`Saved ${cards.length} cards for set ${setCode}`);
 
@@ -295,7 +295,7 @@ async function main() {
 
     fs.writeFileSync(
       path.join(mtgCardsDir, 'index.ts'),
-      `${indexImports}\n${indexExports}`
+      `${indexImports}\n${indexExports}`,
     );
 
     console.log('MTG data fetching complete!');

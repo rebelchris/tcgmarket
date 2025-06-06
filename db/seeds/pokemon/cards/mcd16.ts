@@ -1,14 +1,134 @@
 export const cardSeedMcd16 = [
-  {"tcgId":"pokemon","setId":"mcd16","name":"Vulpix","tcgApiId":"mcd16-1","number":"1","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/1.png\",\"large\":\"https://images.pokemontcg.io/mcd16/1_hires.png\"}","searchName":"Vulpix (undefined 1)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Torchic","tcgApiId":"mcd16-2","number":"2","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/2.png\",\"large\":\"https://images.pokemontcg.io/mcd16/2_hires.png\"}","searchName":"Torchic (undefined 2)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Fennekin","tcgApiId":"mcd16-3","number":"3","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/3.png\",\"large\":\"https://images.pokemontcg.io/mcd16/3_hires.png\"}","searchName":"Fennekin (undefined 3)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Magikarp","tcgApiId":"mcd16-4","number":"4","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/4.png\",\"large\":\"https://images.pokemontcg.io/mcd16/4_hires.png\"}","searchName":"Magikarp (undefined 4)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Totodile","tcgApiId":"mcd16-5","number":"5","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/5.png\",\"large\":\"https://images.pokemontcg.io/mcd16/5_hires.png\"}","searchName":"Totodile (undefined 5)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Pikachu","tcgApiId":"mcd16-6","number":"6","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/6.png\",\"large\":\"https://images.pokemontcg.io/mcd16/6_hires.png\"}","searchName":"Pikachu (undefined 6)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Scraggy","tcgApiId":"mcd16-7","number":"7","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/7.png\",\"large\":\"https://images.pokemontcg.io/mcd16/7_hires.png\"}","searchName":"Scraggy (undefined 7)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Jigglypuff","tcgApiId":"mcd16-8","number":"8","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/8.png\",\"large\":\"https://images.pokemontcg.io/mcd16/8_hires.png\"}","searchName":"Jigglypuff (undefined 8)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Togepi","tcgApiId":"mcd16-9","number":"9","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/9.png\",\"large\":\"https://images.pokemontcg.io/mcd16/9_hires.png\"}","searchName":"Togepi (undefined 9)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Dedenne","tcgApiId":"mcd16-10","number":"10","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/10.png\",\"large\":\"https://images.pokemontcg.io/mcd16/10_hires.png\"}","searchName":"Dedenne (undefined 10)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Meowth","tcgApiId":"mcd16-11","number":"11","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/11.png\",\"large\":\"https://images.pokemontcg.io/mcd16/11_hires.png\"}","searchName":"Meowth (undefined 11)"},
-  {"tcgId":"pokemon","setId":"mcd16","name":"Eevee","tcgApiId":"mcd16-12","number":"12","rarity":"","images":"{\"small\":\"https://images.pokemontcg.io/mcd16/12.png\",\"large\":\"https://images.pokemontcg.io/mcd16/12_hires.png\"}","searchName":"Eevee (undefined 12)"}
-]
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Vulpix',
+    tcgApiId: 'mcd16-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/1.png","large":"https://images.pokemontcg.io/mcd16/1_hires.png"}',
+    searchName: 'Vulpix (undefined 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Torchic',
+    tcgApiId: 'mcd16-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/2.png","large":"https://images.pokemontcg.io/mcd16/2_hires.png"}',
+    searchName: 'Torchic (undefined 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Fennekin',
+    tcgApiId: 'mcd16-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/3.png","large":"https://images.pokemontcg.io/mcd16/3_hires.png"}',
+    searchName: 'Fennekin (undefined 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Magikarp',
+    tcgApiId: 'mcd16-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/4.png","large":"https://images.pokemontcg.io/mcd16/4_hires.png"}',
+    searchName: 'Magikarp (undefined 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Totodile',
+    tcgApiId: 'mcd16-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/5.png","large":"https://images.pokemontcg.io/mcd16/5_hires.png"}',
+    searchName: 'Totodile (undefined 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Pikachu',
+    tcgApiId: 'mcd16-6',
+    number: '6',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/6.png","large":"https://images.pokemontcg.io/mcd16/6_hires.png"}',
+    searchName: 'Pikachu (undefined 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Scraggy',
+    tcgApiId: 'mcd16-7',
+    number: '7',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/7.png","large":"https://images.pokemontcg.io/mcd16/7_hires.png"}',
+    searchName: 'Scraggy (undefined 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Jigglypuff',
+    tcgApiId: 'mcd16-8',
+    number: '8',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/8.png","large":"https://images.pokemontcg.io/mcd16/8_hires.png"}',
+    searchName: 'Jigglypuff (undefined 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Togepi',
+    tcgApiId: 'mcd16-9',
+    number: '9',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/9.png","large":"https://images.pokemontcg.io/mcd16/9_hires.png"}',
+    searchName: 'Togepi (undefined 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Dedenne',
+    tcgApiId: 'mcd16-10',
+    number: '10',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/10.png","large":"https://images.pokemontcg.io/mcd16/10_hires.png"}',
+    searchName: 'Dedenne (undefined 10)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Meowth',
+    tcgApiId: 'mcd16-11',
+    number: '11',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/11.png","large":"https://images.pokemontcg.io/mcd16/11_hires.png"}',
+    searchName: 'Meowth (undefined 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd16',
+    name: 'Eevee',
+    tcgApiId: 'mcd16-12',
+    number: '12',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd16/12.png","large":"https://images.pokemontcg.io/mcd16/12_hires.png"}',
+    searchName: 'Eevee (undefined 12)',
+  },
+];

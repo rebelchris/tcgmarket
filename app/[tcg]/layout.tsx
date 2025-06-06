@@ -5,9 +5,5 @@ export default async function TCGLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <main className='flex flex-1 bg-purple-50'>{children}</main>
-    </>
-  );
+  return <main className="flex flex-1 bg-purple-50">{children}</main>;
 }

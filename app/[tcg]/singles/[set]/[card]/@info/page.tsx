@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getCard, getListingsByCard } from '@/app/actions';
 import Link from 'next/link';
 import PriceChart from '@/app/components/PriceChart';
@@ -25,14 +24,14 @@ function weightedAverage(listings: Listing[]): number {
   const totalQuantity = listings.reduce((sum, l) => sum + (l.quantity || 0), 0);
   const totalValue = listings.reduce(
     (sum, l) => sum + l.price * (l.quantity || 0),
-    0
+    0,
   );
   return totalQuantity > 0 ? totalValue / totalQuantity : 0;
 }
 
 function getPriceTrendData(
   listings: Listing[],
-  days: number
+  days: number,
 ): PriceDataPoint[] {
   const now = new Date();
   // Create an array for each day, 0 = oldest (30 days ago), days = today
@@ -41,7 +40,7 @@ function getPriceTrendData(
     (_, i) => ({
       day: i,
       prices: [],
-    })
+    }),
   );
 
   listings.forEach((listing) => {
@@ -51,10 +50,10 @@ function getPriceTrendData(
     const createdDate = new Date(
       created.getFullYear(),
       created.getMonth(),
-      created.getDate()
+      created.getDate(),
     );
     const diffDays = Math.floor(
-      (nowDate.getTime() - createdDate.getTime()) / (1000 * 60 * 60 * 24)
+      (nowDate.getTime() - createdDate.getTime()) / (1000 * 60 * 60 * 24),
     );
     const bucketIndex = days - diffDays;
     if (bucketIndex >= 0 && bucketIndex <= days) {
@@ -71,9 +70,9 @@ function getPriceTrendData(
     price:
       bucket.prices.length > 0
         ? Math.round(
-            (bucket.prices.reduce((a, b) => a + b, 0) / bucket.prices.length) *
-              100
-          ) / 100
+          (bucket.prices.reduce((a, b) => a + b, 0) / bucket.prices.length) *
+              100,
+        ) / 100
         : 0,
   }));
 }
@@ -106,7 +105,7 @@ export default async function Page({
 
   const availableItems = normalizedListings.reduce(
     (sum, l) => sum + (l.quantity || 0),
-    0
+    0,
   );
 
   const avg30 = weightedAverage(filterByDays(normalizedListings, 30));
@@ -116,7 +115,7 @@ export default async function Page({
   const priceTrendData = getPriceTrendData(normalizedListings, 30);
 
   if (!data) {
-    return <p className='text-center py-4 text-gray-500'>Card not found</p>;
+    return <p className="text-center py-4 text-gray-500">Card not found</p>;
   }
 
   const cardData = [
@@ -126,7 +125,7 @@ export default async function Page({
       value: (
         <Link
           href={`/${tcg}/singles/${data.set?.slug}`}
-          className='text-blue-600 hover:text-blue-800 hover:underline'
+          className="text-blue-600 hover:text-blue-800 hover:underline"
         >
           {data.set?.name}
         </Link>
@@ -141,30 +140,30 @@ export default async function Page({
   ];
 
   return (
-    <div className='gap-4 flex flex-col'>
-      <div className='bg-white p-6 border-gray-200 border rounded-lg'>
-        <div className='flex flex-col md:flex-row gap-6'>
+    <div className="gap-4 flex flex-col">
+      <div className="bg-white p-6 border-gray-200 border rounded-lg">
+        <div className="flex flex-col md:flex-row gap-6">
           {/* Card Details */}
-          <div className='flex-grow'>
-            <dl className='space-y-3'>
+          <div className="flex-grow">
+            <dl className="space-y-3">
               {cardData.map(({ label, value }) => (
                 <div
                   key={label}
-                  className='flex items-center py-2 border-b border-gray-100'
+                  className="flex items-center py-2 border-b border-gray-100"
                 >
-                  <dt className='w-1/3 font-semibold text-gray-600'>{label}</dt>
-                  <dd className='w-2/3 text-gray-900'>{value}</dd>
+                  <dt className="w-1/3 font-semibold text-gray-600">{label}</dt>
+                  <dd className="w-2/3 text-gray-900">{value}</dd>
                 </div>
               ))}
             </dl>
           </div>
 
           {/* Price Trend Graph */}
-          <div className='flex-shrink-0 min-w-[300px] border-l border-gray-100 pl-6'>
-            <h3 className='font-semibold text-gray-700 mb-2'>
+          <div className="flex-shrink-0 min-w-[300px] border-l border-gray-100 pl-6">
+            <h3 className="font-semibold text-gray-700 mb-2">
               Price Trend (30 days)
             </h3>
-            <PriceChart data={priceTrendData} days={30} currencySymbol='R' />
+            <PriceChart data={priceTrendData} days={30} currencySymbol="R" />
           </div>
         </div>
       </div>

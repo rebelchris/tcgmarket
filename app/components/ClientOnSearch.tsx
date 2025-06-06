@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 
 const ClientOnlySearch = dynamic(() => import('./Search'), {
-    ssr: false,
-})
+  ssr: false,
+});
 
-export default ClientOnlySearch
+export default ClientOnlySearch;

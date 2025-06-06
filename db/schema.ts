@@ -47,7 +47,7 @@ export const accounts = pgTable(
         columns: [account.provider, account.providerAccountId],
       }),
     },
-  ]
+  ],
 );
 
 export const sessions = pgTable('session', {
@@ -71,7 +71,7 @@ export const verificationTokens = pgTable(
         columns: [verificationToken.identifier, verificationToken.token],
       }),
     },
-  ]
+  ],
 );
 
 export const authenticators = pgTable(
@@ -94,7 +94,7 @@ export const authenticators = pgTable(
         columns: [authenticator.userId, authenticator.credentialID],
       }),
     },
-  ]
+  ],
 );
 
 export const tcgs = pgTable('tcgs', {
@@ -140,15 +140,15 @@ export const cards = pgTable(
       .$type<{ large?: string; small?: string }>(),
     createdAt: timestamp('created_at').defaultNow(),
     slug: text('slug').generatedAlwaysAs(
-      (): SQL => sql`slugify(${cards.searchName})`
+      (): SQL => sql`slugify(${cards.searchName})`,
     ),
   },
   (table: SQL) => ({
     nameSearchIndex: index('name_search_index').using(
       'gin',
-      sql`to_tsvector('english', ${cards.name})`
+      sql`to_tsvector('english', ${cards.name})`,
     ),
-  })
+  }),
 );
 
 export const userLists = pgTable('user_lists', {

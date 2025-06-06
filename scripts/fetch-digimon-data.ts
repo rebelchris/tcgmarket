@@ -49,14 +49,14 @@ async function fetchDigimonSets(): Promise<DigimonSet[]> {
   try {
     // First, fetch the main Digimon Card Game page
     const mainResponse = await axios.get(
-      'https://digimoncardgame.fandom.com/wiki/Digimon_Card_Game'
+      'https://digimoncardgame.fandom.com/wiki/Digimon_Card_Game',
     );
     const mainDom = new JSDOM(mainResponse.data);
     const { document: mainDoc } = mainDom.window;
 
     // Find the Expansion Sets and Starter Decks section by ID
     const setsSection = mainDoc.getElementById(
-      'Expansion_Sets_and_Starter_Decks'
+      'Expansion_Sets_and_Starter_Decks',
     );
     if (!setsSection) {
       console.error('Could not find Expansion Sets and Starter Decks section');
@@ -88,7 +88,7 @@ async function fetchDigimonSets(): Promise<DigimonSet[]> {
 
       console.log(`Fetching sets from category: ${categoryUrl}`);
       const categoryResponse = await axios.get(
-        `https://digimoncardgame.fandom.com${categoryUrl}`
+        `https://digimoncardgame.fandom.com${categoryUrl}`,
       );
       const categoryDom = new JSDOM(categoryResponse.data);
       const { document: categoryDoc } = categoryDom.window;
@@ -162,7 +162,7 @@ async function fetchDigimonSets(): Promise<DigimonSet[]> {
 // Function to fetch cards from a specific set
 async function fetchCardsForSet(
   setId: string,
-  setCode: string
+  setCode: string,
 ): Promise<DigimonCard[]> {
   console.log(`Fetching cards for set ${setCode}...`);
 
@@ -181,7 +181,7 @@ async function fetchCardsForSet(
     // Get all rows from the table
     const rows = Array.from(cardTable.querySelectorAll('tr')).slice(1); // Skip header row
 
-    const cards = rows.map((row: unknown) => {
+    const cards = rows.map((row: Element) => {
       const cells = Array.from(row.querySelectorAll('th,td'));
       console.log(cells, cells.length);
       if (cells.length < 5) return null;
@@ -224,7 +224,7 @@ async function fetchCardsForSet(
 
     // Filter out null values
     const validCards = cards.filter(
-      (card): card is DigimonCard => card !== null
+      (card): card is DigimonCard => card !== null,
     );
     console.log(`Found ${validCards.length} cards for set ${setCode}`);
     return validCards;
@@ -298,8 +298,8 @@ async function main() {
             const colors =
               card.metadata.colors && card.metadata.colors.length > 0
                 ? card.metadata.colors
-                    .map((color) => `"${color.replace(/"/g, '\\"')}"`)
-                    .join(', ')
+                  .map((color) => `"${color.replace(/"/g, '\\"')}"`)
+                  .join(', ')
                 : '';
 
             return `${acc}  {
@@ -318,10 +318,10 @@ async function main() {
     ${card.metadata.dp ? `dp: "${card.metadata.dp}",` : ''}
     ${card.metadata.playCost ? `playCost: "${card.metadata.playCost}",` : ''}
     ${
-      card.metadata.evolveCost
-        ? `evolveCost: "${card.metadata.evolveCost}",`
-        : ''
-    }
+  card.metadata.evolveCost
+    ? `evolveCost: "${card.metadata.evolveCost}",`
+    : ''
+}
   },
   images: {
     
@@ -332,7 +332,7 @@ async function main() {
 
           fs.writeFileSync(
             path.join(digimonCardsDir, `${setId}.ts`),
-            `${cardsContent}];\n`
+            `${cardsContent}];\n`,
           );
 
           // Update index imports and exports
@@ -352,7 +352,7 @@ async function main() {
     indexExports += '];\n';
     fs.writeFileSync(
       path.join(digimonCardsDir, 'index.ts'),
-      `${indexImports}\n${indexExports}`
+      `${indexImports}\n${indexExports}`,
     );
 
     console.log('Digimon data fetching complete!');
