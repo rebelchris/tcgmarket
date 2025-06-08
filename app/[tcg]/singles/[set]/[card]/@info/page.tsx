@@ -2,6 +2,7 @@ import { getCard, getListingsByCard } from '@/app/actions';
 import Link from 'next/link';
 import PriceTrends from '@/app/components/PriceTrends';
 import CardImageResponsive from '@/app/components/CardImageResponsive';
+import React from 'react';
 
 type Listing = {
   price: number;
@@ -88,25 +89,37 @@ export default async function Page({
 
   return (
     <div className="gap-4 flex flex-col">
-      <div className="bg-white p-6 border-gray-200 border rounded-lg">
+      <div className="bg-white p-4 md:p-6 border-gray-200 border rounded-lg">
         <div className="flex flex-col md:flex-row gap-6">
+          {/* Card Image (mobile only) */}
+          <div className="block md:hidden mb-4">
+            <CardImageResponsive src={data.images?.large ?? ''} alt={data.name} />
+          </div>
           {/* Card Details */}
           <div className="flex-grow">
-            <CardImageResponsive src={data.images?.large ?? ''} alt={data.name} hideDesktop />
-            <dl className="space-y-3">
-              {cardData.map(({ label, value }) => (
-                <div
-                  key={label}
-                  className="flex items-center py-2 border-b border-gray-100"
-                >
-                  <dt className="w-1/3 font-semibold text-gray-600">{label}</dt>
-                  <dd className="w-2/3 text-gray-900">{value}</dd>
-                </div>
+            <h3 className="text-sm font-semibold text-gray-700 mb-2">Card Details</h3>
+            <dl className="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              {cardData.slice(0, 4).map(({ label, value }) => (
+                <React.Fragment key={label}>
+                  <dt className="text-gray-500">{label}</dt>
+                  <dd className="text-gray-900">{value}</dd>
+                </React.Fragment>
+              ))}
+            </dl>
+            <h3 className="text-sm font-semibold text-gray-700 mt-4 mb-2">Price Averages</h3>
+            <dl className="grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+              {cardData.slice(4).map(({ label, value }) => (
+                <React.Fragment key={label}>
+                  <dt className="text-gray-500">{label}</dt>
+                  <dd className="text-gray-900">{value}</dd>
+                </React.Fragment>
               ))}
             </dl>
           </div>
-
-          <PriceTrends listings={normalizedListings} hideMobile />
+          {/* Price Trends (desktop only) */}
+          <div className="hidden md:block">
+            <PriceTrends listings={normalizedListings} hideMobile />
+          </div>
         </div>
       </div>
     </div>

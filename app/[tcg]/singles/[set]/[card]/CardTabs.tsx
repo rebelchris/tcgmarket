@@ -26,7 +26,7 @@ export default function CardTabs({
 
   return (
     <div>
-      <div className="flex border-b mb-4">
+      <div className="flex overflow-x-auto border-b mb-4">
         <button
           className={`px-4 py-2 font-semibold border-b-2 ${
             tab === 'info'
