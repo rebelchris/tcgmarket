@@ -33,11 +33,11 @@ const main = async () => {
       name: 'One Piece',
       logoUrl: 'https://cdn.tcgmarket.co.za/one-piece.png',
     },
-    {
-      id: 'digimon',
-      name: 'Digimon',
-      logoUrl: 'https://cdn.tcgmarket.co.za/digimon.jpg',
-    },
+    // {
+    //   id: 'digimon',
+    //   name: 'Digimon',
+    //   logoUrl: 'https://cdn.tcgmarket.co.za/digimon.jpg',
+    // },
   ]);
 
   await db.insert(sets).values(setsSeed);

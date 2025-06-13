@@ -198,7 +198,7 @@ async function main() {
     );
 
     // Process only the 5 most recent sets
-    const limitedSets = sortedSets.slice(0, 5);
+    const limitedSets = sortedSets.slice(0, 10);
     console.log(`Limiting to 5 most recent sets for initial testing`);
 
     // Process sets
@@ -293,9 +293,11 @@ async function main() {
 
     indexExports += '];\n';
 
+    // Add default export
+    const indexContent = `${indexImports}\n${indexExports}export default cardSeed;\n`;
     fs.writeFileSync(
       path.join(mtgCardsDir, 'index.ts'),
-      `${indexImports}\n${indexExports}`,
+      indexContent,
     );
 
     console.log('MTG data fetching complete!');
