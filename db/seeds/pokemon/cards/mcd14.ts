@@ -1,0 +1,134 @@
+export const cardSeedMcd14 = [
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Weedle',
+    tcgApiId: 'mcd14-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/1.png","large":"https://images.pokemontcg.io/mcd14/1_hires.png"}',
+    searchName: 'Weedle (undefined 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Chespin',
+    tcgApiId: 'mcd14-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/2.png","large":"https://images.pokemontcg.io/mcd14/2_hires.png"}',
+    searchName: 'Chespin (undefined 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Fennekin',
+    tcgApiId: 'mcd14-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/3.png","large":"https://images.pokemontcg.io/mcd14/3_hires.png"}',
+    searchName: 'Fennekin (undefined 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Froakie',
+    tcgApiId: 'mcd14-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/4.png","large":"https://images.pokemontcg.io/mcd14/4_hires.png"}',
+    searchName: 'Froakie (undefined 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Pikachu',
+    tcgApiId: 'mcd14-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/5.png","large":"https://images.pokemontcg.io/mcd14/5_hires.png"}',
+    searchName: 'Pikachu (undefined 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Inkay',
+    tcgApiId: 'mcd14-6',
+    number: '6',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/6.png","large":"https://images.pokemontcg.io/mcd14/6_hires.png"}',
+    searchName: 'Inkay (undefined 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Honedge',
+    tcgApiId: 'mcd14-7',
+    number: '7',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/7.png","large":"https://images.pokemontcg.io/mcd14/7_hires.png"}',
+    searchName: 'Honedge (undefined 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Snubbull',
+    tcgApiId: 'mcd14-8',
+    number: '8',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/8.png","large":"https://images.pokemontcg.io/mcd14/8_hires.png"}',
+    searchName: 'Snubbull (undefined 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Swirlix',
+    tcgApiId: 'mcd14-9',
+    number: '9',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/9.png","large":"https://images.pokemontcg.io/mcd14/9_hires.png"}',
+    searchName: 'Swirlix (undefined 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Bunnelby',
+    tcgApiId: 'mcd14-10',
+    number: '10',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/10.png","large":"https://images.pokemontcg.io/mcd14/10_hires.png"}',
+    searchName: 'Bunnelby (undefined 10)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Fletchling',
+    tcgApiId: 'mcd14-11',
+    number: '11',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/11.png","large":"https://images.pokemontcg.io/mcd14/11_hires.png"}',
+    searchName: 'Fletchling (undefined 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd14',
+    name: 'Furfrou',
+    tcgApiId: 'mcd14-12',
+    number: '12',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd14/12.png","large":"https://images.pokemontcg.io/mcd14/12_hires.png"}',
+    searchName: 'Furfrou (undefined 12)',
+  },
+];

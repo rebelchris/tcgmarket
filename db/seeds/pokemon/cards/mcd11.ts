@@ -1,0 +1,134 @@
+export const cardSeedMcd11 = [
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Snivy',
+    tcgApiId: 'mcd11-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/1.png","large":"https://images.pokemontcg.io/mcd11/1_hires.png"}',
+    searchName: 'Snivy (undefined 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Maractus',
+    tcgApiId: 'mcd11-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/2.png","large":"https://images.pokemontcg.io/mcd11/2_hires.png"}',
+    searchName: 'Maractus (undefined 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Tepig',
+    tcgApiId: 'mcd11-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/3.png","large":"https://images.pokemontcg.io/mcd11/3_hires.png"}',
+    searchName: 'Tepig (undefined 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Oshawott',
+    tcgApiId: 'mcd11-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/4.png","large":"https://images.pokemontcg.io/mcd11/4_hires.png"}',
+    searchName: 'Oshawott (undefined 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Alomomola',
+    tcgApiId: 'mcd11-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/5.png","large":"https://images.pokemontcg.io/mcd11/5_hires.png"}',
+    searchName: 'Alomomola (undefined 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Blitzle',
+    tcgApiId: 'mcd11-6',
+    number: '6',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/6.png","large":"https://images.pokemontcg.io/mcd11/6_hires.png"}',
+    searchName: 'Blitzle (undefined 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Munna',
+    tcgApiId: 'mcd11-7',
+    number: '7',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/7.png","large":"https://images.pokemontcg.io/mcd11/7_hires.png"}',
+    searchName: 'Munna (undefined 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Sandile',
+    tcgApiId: 'mcd11-8',
+    number: '8',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/8.png","large":"https://images.pokemontcg.io/mcd11/8_hires.png"}',
+    searchName: 'Sandile (undefined 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Zorua',
+    tcgApiId: 'mcd11-9',
+    number: '9',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/9.png","large":"https://images.pokemontcg.io/mcd11/9_hires.png"}',
+    searchName: 'Zorua (undefined 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Klink',
+    tcgApiId: 'mcd11-10',
+    number: '10',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/10.png","large":"https://images.pokemontcg.io/mcd11/10_hires.png"}',
+    searchName: 'Klink (undefined 10)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Pidove',
+    tcgApiId: 'mcd11-11',
+    number: '11',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/11.png","large":"https://images.pokemontcg.io/mcd11/11_hires.png"}',
+    searchName: 'Pidove (undefined 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd11',
+    name: 'Audino',
+    tcgApiId: 'mcd11-12',
+    number: '12',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd11/12.png","large":"https://images.pokemontcg.io/mcd11/12_hires.png"}',
+    searchName: 'Audino (undefined 12)',
+  },
+];

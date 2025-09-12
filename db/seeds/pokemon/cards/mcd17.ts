@@ -1,0 +1,134 @@
+export const cardSeedMcd17 = [
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Rowlet',
+    tcgApiId: 'mcd17-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/1.png","large":"https://images.pokemontcg.io/mcd17/1_hires.png"}',
+    searchName: 'Rowlet (undefined 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Grubbin',
+    tcgApiId: 'mcd17-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/2.png","large":"https://images.pokemontcg.io/mcd17/2_hires.png"}',
+    searchName: 'Grubbin (undefined 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Litten',
+    tcgApiId: 'mcd17-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/3.png","large":"https://images.pokemontcg.io/mcd17/3_hires.png"}',
+    searchName: 'Litten (undefined 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Popplio',
+    tcgApiId: 'mcd17-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/4.png","large":"https://images.pokemontcg.io/mcd17/4_hires.png"}',
+    searchName: 'Popplio (undefined 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Pikachu',
+    tcgApiId: 'mcd17-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/5.png","large":"https://images.pokemontcg.io/mcd17/5_hires.png"}',
+    searchName: 'Pikachu (undefined 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Cosmog',
+    tcgApiId: 'mcd17-6',
+    number: '6',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/6.png","large":"https://images.pokemontcg.io/mcd17/6_hires.png"}',
+    searchName: 'Cosmog (undefined 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Crabrawler',
+    tcgApiId: 'mcd17-7',
+    number: '7',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/7.png","large":"https://images.pokemontcg.io/mcd17/7_hires.png"}',
+    searchName: 'Crabrawler (undefined 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Alolan Meowth',
+    tcgApiId: 'mcd17-8',
+    number: '8',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/8.png","large":"https://images.pokemontcg.io/mcd17/8_hires.png"}',
+    searchName: 'Alolan Meowth (undefined 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Alolan Diglett',
+    tcgApiId: 'mcd17-9',
+    number: '9',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/9.png","large":"https://images.pokemontcg.io/mcd17/9_hires.png"}',
+    searchName: 'Alolan Diglett (undefined 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Cutiefly',
+    tcgApiId: 'mcd17-10',
+    number: '10',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/10.png","large":"https://images.pokemontcg.io/mcd17/10_hires.png"}',
+    searchName: 'Cutiefly (undefined 10)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Pikipek',
+    tcgApiId: 'mcd17-11',
+    number: '11',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/11.png","large":"https://images.pokemontcg.io/mcd17/11_hires.png"}',
+    searchName: 'Pikipek (undefined 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'mcd17',
+    name: 'Yungoos',
+    tcgApiId: 'mcd17-12',
+    number: '12',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/mcd17/12.png","large":"https://images.pokemontcg.io/mcd17/12_hires.png"}',
+    searchName: 'Yungoos (undefined 12)',
+  },
+];

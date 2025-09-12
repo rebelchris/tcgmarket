@@ -1,0 +1,57 @@
+export const cardSeedFut20 = [
+  {
+    tcgId: 'pokemon',
+    setId: 'fut20',
+    name: 'Pikachu on the Ball',
+    tcgApiId: 'fut20-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/fut20/1.png","large":"https://images.pokemontcg.io/fut20/1_hires.png"}',
+    searchName: 'Pikachu on the Ball (FUT20 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'fut20',
+    name: 'Eevee on the Ball',
+    tcgApiId: 'fut20-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/fut20/2.png","large":"https://images.pokemontcg.io/fut20/2_hires.png"}',
+    searchName: 'Eevee on the Ball (FUT20 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'fut20',
+    name: 'Grookey on the Ball',
+    tcgApiId: 'fut20-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/fut20/3.png","large":"https://images.pokemontcg.io/fut20/3_hires.png"}',
+    searchName: 'Grookey on the Ball (FUT20 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'fut20',
+    name: 'Scorbunny on the Ball',
+    tcgApiId: 'fut20-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/fut20/4.png","large":"https://images.pokemontcg.io/fut20/4_hires.png"}',
+    searchName: 'Scorbunny on the Ball (FUT20 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'fut20',
+    name: 'Sobble on the Ball',
+    tcgApiId: 'fut20-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/fut20/5.png","large":"https://images.pokemontcg.io/fut20/5_hires.png"}',
+    searchName: 'Sobble on the Ball (FUT20 5)',
+  },
+];

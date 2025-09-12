@@ -1,0 +1,178 @@
+export const cardSeedSve = [
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Grass Energy',
+    tcgApiId: 'sve-1',
+    number: '1',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/1.png","large":"https://images.pokemontcg.io/sve/1_hires.png"}',
+    searchName: 'Basic Grass Energy (SVE 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Fire Energy',
+    tcgApiId: 'sve-2',
+    number: '2',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/2.png","large":"https://images.pokemontcg.io/sve/2_hires.png"}',
+    searchName: 'Basic Fire Energy (SVE 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Water Energy',
+    tcgApiId: 'sve-3',
+    number: '3',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/3.png","large":"https://images.pokemontcg.io/sve/3_hires.png"}',
+    searchName: 'Basic Water Energy (SVE 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Lightning Energy',
+    tcgApiId: 'sve-4',
+    number: '4',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/4.png","large":"https://images.pokemontcg.io/sve/4_hires.png"}',
+    searchName: 'Basic Lightning Energy (SVE 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Psychic Energy',
+    tcgApiId: 'sve-5',
+    number: '5',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/5.png","large":"https://images.pokemontcg.io/sve/5_hires.png"}',
+    searchName: 'Basic Psychic Energy (SVE 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Fighting Energy',
+    tcgApiId: 'sve-6',
+    number: '6',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/6.png","large":"https://images.pokemontcg.io/sve/6_hires.png"}',
+    searchName: 'Basic Fighting Energy (SVE 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Darkness Energy',
+    tcgApiId: 'sve-7',
+    number: '7',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/7.png","large":"https://images.pokemontcg.io/sve/7_hires.png"}',
+    searchName: 'Basic Darkness Energy (SVE 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Metal Energy',
+    tcgApiId: 'sve-8',
+    number: '8',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/8.png","large":"https://images.pokemontcg.io/sve/8_hires.png"}',
+    searchName: 'Basic Metal Energy (SVE 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Grass Energy',
+    tcgApiId: 'sve-9',
+    number: '9',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/9.png","large":"https://images.pokemontcg.io/sve/9_hires.png"}',
+    searchName: 'Basic Grass Energy (SVE 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Fire Energy',
+    tcgApiId: 'sve-10',
+    number: '10',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/10.png","large":"https://images.pokemontcg.io/sve/10_hires.png"}',
+    searchName: 'Basic Fire Energy (SVE 10)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Water Energy',
+    tcgApiId: 'sve-11',
+    number: '11',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/11.png","large":"https://images.pokemontcg.io/sve/11_hires.png"}',
+    searchName: 'Basic Water Energy (SVE 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Lightning Energy',
+    tcgApiId: 'sve-12',
+    number: '12',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/12.png","large":"https://images.pokemontcg.io/sve/12_hires.png"}',
+    searchName: 'Basic Lightning Energy (SVE 12)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Psychic Energy',
+    tcgApiId: 'sve-13',
+    number: '13',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/13.png","large":"https://images.pokemontcg.io/sve/13_hires.png"}',
+    searchName: 'Basic Psychic Energy (SVE 13)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Fighting Energy',
+    tcgApiId: 'sve-14',
+    number: '14',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/14.png","large":"https://images.pokemontcg.io/sve/14_hires.png"}',
+    searchName: 'Basic Fighting Energy (SVE 14)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Darkness Energy',
+    tcgApiId: 'sve-15',
+    number: '15',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/15.png","large":"https://images.pokemontcg.io/sve/15_hires.png"}',
+    searchName: 'Basic Darkness Energy (SVE 15)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'sve',
+    name: 'Basic Metal Energy',
+    tcgApiId: 'sve-16',
+    number: '16',
+    rarity: 'Common',
+    images:
+      '{"small":"https://images.pokemontcg.io/sve/16.png","large":"https://images.pokemontcg.io/sve/16_hires.png"}',
+    searchName: 'Basic Metal Energy (SVE 16)',
+  },
+];

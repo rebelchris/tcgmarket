@@ -1,0 +1,134 @@
+export const cardSeedTk2a = [
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Beldum',
+    tcgApiId: 'tk2a-1',
+    number: '1',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/1.png","large":"https://images.pokemontcg.io/tk2a/1_hires.png"}',
+    searchName: 'Beldum (undefined 1)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Electrike',
+    tcgApiId: 'tk2a-2',
+    number: '2',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/2.png","large":"https://images.pokemontcg.io/tk2a/2_hires.png"}',
+    searchName: 'Electrike (undefined 2)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Grumpig',
+    tcgApiId: 'tk2a-3',
+    number: '3',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/3.png","large":"https://images.pokemontcg.io/tk2a/3_hires.png"}',
+    searchName: 'Grumpig (undefined 3)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Meowth',
+    tcgApiId: 'tk2a-4',
+    number: '4',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/4.png","large":"https://images.pokemontcg.io/tk2a/4_hires.png"}',
+    searchName: 'Meowth (undefined 4)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Metang',
+    tcgApiId: 'tk2a-5',
+    number: '5',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/5.png","large":"https://images.pokemontcg.io/tk2a/5_hires.png"}',
+    searchName: 'Metang (undefined 5)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Plusle',
+    tcgApiId: 'tk2a-6',
+    number: '6',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/6.png","large":"https://images.pokemontcg.io/tk2a/6_hires.png"}',
+    searchName: 'Plusle (undefined 6)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Spoink',
+    tcgApiId: 'tk2a-7',
+    number: '7',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/7.png","large":"https://images.pokemontcg.io/tk2a/7_hires.png"}',
+    searchName: 'Spoink (undefined 7)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Energy Search',
+    tcgApiId: 'tk2a-8',
+    number: '8',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/8.png","large":"https://images.pokemontcg.io/tk2a/8_hires.png"}',
+    searchName: 'Energy Search (undefined 8)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Potion',
+    tcgApiId: 'tk2a-9',
+    number: '9',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/9.png","large":"https://images.pokemontcg.io/tk2a/9_hires.png"}',
+    searchName: 'Potion (undefined 9)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: "Professor Cozmo's Discovery",
+    tcgApiId: 'tk2a-10',
+    number: '10',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/10.png","large":"https://images.pokemontcg.io/tk2a/10_hires.png"}',
+    searchName: "Professor Cozmo's Discovery (undefined 10)",
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Lightning Energy',
+    tcgApiId: 'tk2a-11',
+    number: '11',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/11.png","large":"https://images.pokemontcg.io/tk2a/11_hires.png"}',
+    searchName: 'Lightning Energy (undefined 11)',
+  },
+  {
+    tcgId: 'pokemon',
+    setId: 'tk2a',
+    name: 'Psychic Energy',
+    tcgApiId: 'tk2a-12',
+    number: '12',
+    rarity: '',
+    images:
+      '{"small":"https://images.pokemontcg.io/tk2a/12.png","large":"https://images.pokemontcg.io/tk2a/12_hires.png"}',
+    searchName: 'Psychic Energy (undefined 12)',
+  },
+];
